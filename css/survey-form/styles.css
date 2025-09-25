@@ -1,0 +1,97 @@
+html{
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	background-color: #FE6960;
+	font-family: dm-sans, sans-serif;
+	color: #333;
+}
+
+.survey-form{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+#title,legend, label{
+	font-weight: bold;
+}
+
+
+#title{
+	font-size: 3rem;
+	margin: 3rem 0 0 0;
+	color: #FEBF97;
+}
+
+#description{
+	font-size: 1.25rem;
+	color: #fafafa;
+}
+
+form{
+	margin: 2rem 0 0 0;
+	background-color: #fff;
+	padding: 2rem 1.5rem;
+	border-radius: 0.8rem;
+	box-shadow: 2px 2px 8px 0 #D95252;
+}
+
+legend{
+	font-size: 1.25rem;
+	margin: 0.5rem 0;
+}
+
+fieldset{
+	border: none;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #D2FDFE;
+	margin: 0 0 1rem 0;
+}
+
+fieldset:last-of-type{
+ 	border-bottom: none;
+ 	margin: 0 0 -1rem 0;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea{
+	width: 100%;
+	padding: 0.75rem;
+	margin: 0.75rem 0 1.5rem 0;
+	font-size: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #D2FDFE;
+	color: #333;
+}
+
+input[type="radio"], input[type="checkbox"] {
+	margin: 0 0.75rem 0.5rem 0.12rem;
+}
+
+select{
+	background-color: #D1FFFA;
+}
+
+textarea{
+	height: 8rem;
+}
+
+button{
+	background-color: #FE6960;
+	border: none;
+	font-size: 1.2rem;
+	padding: 1rem 1.5rem;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+button:hover{
+	background-color: #FEBF97;
+	cursor: pointer;
+}
