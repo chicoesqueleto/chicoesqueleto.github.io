@@ -52,3 +52,7 @@ h2{
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+h3::before{
+  content: "Question #"
+}
