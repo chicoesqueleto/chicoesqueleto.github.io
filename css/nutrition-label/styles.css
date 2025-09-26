@@ -1,5 +1,13 @@
-body{
-	font-family: "Open Sans", sans-serif;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .label {
@@ -12,20 +20,7 @@ body{
 header h1 {
   text-align: center;
   margin: -4px 0;
-  letter-spacing: 0.15px;
-}
-
-p{
-	margin: 0;
-}
-
-.divider{
-  border-bottom: 1px solid #888989;
-  margin: 2px 0;
-}
-
-.bold{
-  font-weight: 800;
+  letter-spacing: 0.15px
 }
 
 p {
@@ -34,7 +29,20 @@ p {
   justify-content: space-between;
 }
 
-.large{
+.divider {
+  border-bottom: 1px solid #888989;
+  margin: 2px 0;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.large {
   height: 10px;
+}
+
+.large, .medium {
   background-color: black;
+  border: 0;
 }
