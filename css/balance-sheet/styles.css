@@ -52,5 +52,17 @@ section{
   position: sticky;
   top: 0;
   color: #fff;
+  z-index: 999;
   background: #0a0a23;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+}
+
+#years span[class]{
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+.table-wrap{
+  padding: 0 0.75rem 1.5rem 0.75rem;
 }
