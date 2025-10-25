@@ -15,7 +15,7 @@ p{
   line-height: 150%;
 }
 
-h1, h2{
+h1, .h2-header{
   margin: 0 0 .5rem 0;
 }
 
@@ -28,8 +28,9 @@ h1{
   line-height: 112.5%;
 }
 
-h2{
+.h2-header{
   font-size: 1.802rem;
+  font-weight: 800;
 }
 
 .container{
@@ -85,7 +86,7 @@ code{
     display: grid;
     column-gap: 2rem;
     grid-template-areas: "navbar main-doc";
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 3fr;
     padding: 0;
   }
 
@@ -97,6 +98,7 @@ code{
     align-self: start;
     margin: 0;
     height: 100vh;
+    overflow-y: auto;
   }
 
   #main-doc{
