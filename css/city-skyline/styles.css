@@ -34,12 +34,11 @@ body{
 	height: 70%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center
 }
 
 .bb1a{
 	width: 70%;
-	height: 10%;
 	background-color: var(--building-color1);
 }
 
@@ -77,6 +76,11 @@ body{
 	width: 11%;
 	height: 58%;
 	background-color: var(--building-color4);
+}
+
+.bb1-window{
+	height: 10%;
+	background: linear-gradient(var(--building-color1), var(--window-color1));
 }
 
 .foreground-buildings{
