@@ -77,6 +77,28 @@ code{
   line-height: 175%;
 }
 
+figure{
+  margin: 2rem 0; 
+}
+
+figure img{
+  max-width: 100%;
+}
+
+figcaption{
+  margin: .5rem 0 0 0;
+  font-size: .8rem;
+}
+
+.link{
+  font-weight: bold;
+  color: #333;
+}
+
+.link:hover{
+  color: #ff8c69;
+}
+
 #navbar li a:hover{
   background-color: #B2FCE4;
 }
