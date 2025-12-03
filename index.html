@@ -4,22 +4,29 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Hamburguesas Marcianas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Ultra&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/product-landing-page/styles.css">
 </head>
 <body>
 	<header id="header">
-		<img id="header-img" src="https://placehold.co/200" alt="Hamburguesas Marcianas logo" loading="lazy">
-		<nav id="nav-bar">
-			<ul>
-				<li class="nav-link"><a href="#Caracteristicas">Características</a></li>
-				<li class="nav-link"><a href="#Experiencia">Experiencia</a></li>
-				<li class="nav-link"><a href="#Precios">Precios</a></li>
-			</ul>	
-		</nav>
+		<div class="nav">
+			<img id="header-img" src="images/logo-marciana.svg" alt="Hamburguesas Marcianas logo" loading="lazy">
+			<nav id="nav-bar">
+				<ul>
+					<li class="nav-link"><a href="#Caracteristicas">Características</a></li>
+					<li class="nav-link"><a href="#Experiencia">Experiencia</a></li>
+					<li class="nav-link"><a href="#Precios">Precios</a></li>
+				</ul>	
+			</nav>
+		</div>
 	</header>
 	<main>
 		<section id="heading">
 			<h1 class="xl">Experimenta las hamburguesas marcianas en eventos en Medellín. Suscríbete para que te avisemos dónde vamos a estar.</h1>
 			<form id="form" action="https://www.freecodecamp.com/email-submit">
+				<h2>Suscríbete</h2>
 				<input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
 				<input type="submit" id="submit" class="button mid" value="Suscríbete">
 			</form>	
@@ -36,19 +43,16 @@
 			</div>
 			<div class="feature">
 				<div class="icon">
-					<img src="https://placehold.co/200" alt="Ícono ingredientes frescos" loading="lazy">
+					<img src="https://placehold.co/200" alt="Ícono deliciosas" loading="lazy">
 				</div>
 				<div class="text">
 					<h2>Deliciosas</h2>
 					<p>Hechas con una receta cuidadosamente probada, que te alegrará el día.</p>
-					<form>
-						
-					</form>
 				</div>
 			</div>
 			<div class="feature">
 				<div class="icon">
-					<img src="https://placehold.co/200" alt="Ícono ingredientes frescos" loading="lazy">
+					<img src="https://placehold.co/200" alt="Ícono veganas" loading="lazy">
 				</div>
 				<div class="text">
 					<h2>Veganas</h2>
@@ -62,7 +66,24 @@
 			</video>	
 		</section>
 		<section id="Precios">
-			
+			<div class="price">
+				<h2>Hamburguesa</h2>
+				<h3 class="xl">$12.000</h3>
+				<p>Pan integral, tortilla de lentejas de 90 gramos, hummus de garbanzo, tomate, lechuga, cebolla roja, guacamole y hogao.</p>
+				<button class="button mid">Seleccionar</button>
+			</div>
+			<div class="price">
+				<h2>Hamburguesa + calca</h2>
+				<h3 class="xl">$13.000</h3>
+				<p>Hamburguesa y una calca seleccionada.</p>
+				<button class="button mid">Seleccionar</button>
+			</div>
+			<div class="price">
+				<h2>Hamburguesa + papas casquito</h2>
+				<h3 class="xl">$15.000</h3>
+				<p>Hamburguesa y 100 gramos de papas casquito horneadas con salsa seleccionada. </p>
+				<button class="button mid">Seleccionar</button>
+			</div>
 		</section>
 	</main>
 

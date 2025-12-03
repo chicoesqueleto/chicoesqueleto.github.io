@@ -1,0 +1,128 @@
+:root{
+	--morado: #75297F;
+	--morado-oscuro: #5B2467;
+	--rojo-naranja-claro: #F37769;	
+	--rojo-naranja: #F1562F;
+	--crema: #F3F0E4;
+	--hueso: #FFFCF2;
+	--texto: #333333;
+}
+
+body{
+	font-family: "Gabarito", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0;
+	font-size: 1rem;
+	background-color: var(--crema);
+	color: var(--texto);
+}
+
+h1, h2, h3{
+	font-family: "Ultra", serif;
+	font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  line-height: 112%;	
+}
+
+.xl{
+	font-size: 3.25rem;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+#header{
+	position: sticky;
+	top: 0;
+	padding: 0.75rem 2rem;
+	background-color: var(--morado-oscuro);
+	color: var(--rojo-naranja-claro);
+	margin: 0;
+}
+ 
+#header-img{
+	width: 4rem;
+}
+
+.nav{
+	display: flex;
+	justify-content: space-between;
+}
+
+#nav-bar{
+	display: flex;
+	align-self: center;
+}
+
+#nav-bar ul{
+	margin: 0;
+	padding: 0;
+}
+
+#nav-bar li{
+	list-style: none;
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+#nav-bar li:last-child{
+	margin-right: 0;
+}
+
+#nav-bar a{
+	color: var(--rojo-naranja-claro);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+#nav-bar a:hover{
+	color: var(--crema);
+}
+
+#heading{
+	padding: 6rem 9.25rem;
+}
+
+#heading h1{
+	color: var(--morado);
+	margin-bottom: 2rem;
+}
+
+#form h2{
+	color: var(--morado);
+	margin-bottom: 1rem;
+}
+
+input[type="email"]{
+	background-color: var(--hueso);
+	border-color: transparent;
+	font-size: 1rem;
+	border-radius: 12px;
+	padding: 1rem 0.75rem;
+	margin-right: 1rem;
+	width: 45%;
+}
+
+.button{
+	border-color: transparent;
+	border-radius: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.mid{
+	font-size: 1rem;
+	padding: 1rem 1.5rem;
+}
+
+#form .button{
+	color: var(--hueso);
+	background-color: var(--morado);
+}
+
+#form .button:hover{
+	background-color: var(--rojo-naranja);
+}
