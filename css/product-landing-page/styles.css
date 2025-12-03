@@ -145,7 +145,6 @@ input[type="email"]{
 
 .feature{
 	width: 30%;
-	background-color: var(--rojo-naranja-claro);
 	text-align: center;
 	color: var(--crema);
 }
@@ -156,4 +155,19 @@ input[type="email"]{
 
 .feature p{
 	margin: 0 1rem 0 0;
+}
+
+.feature .icon{
+	background-color: var(--rojo-naranja-claro);
+	width: 12.75rem;
+	height: 12.75rem;
+	margin: 0 auto 1rem auto;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.feature .icon img{
+
 }
