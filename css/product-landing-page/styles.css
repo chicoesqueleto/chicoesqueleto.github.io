@@ -50,6 +50,7 @@ h2{
 	background-color: var(--morado-oscuro);
 	color: var(--rojo-naranja-claro);
 	margin: 0;
+	z-index: 10;
 }
  
 #header-img{
@@ -180,6 +181,7 @@ input[type="email"]{
 .deli img{
 	position: relative;
 	top: .75rem;
+	z-index: 0;
 }
 
 #Experiencia{
@@ -209,4 +211,14 @@ input[type="email"]{
 .price{
 	width: 30%;
 	background-color: var(--crema);
+	border-radius: 12px;
+	text-align: center;
+}
+
+.price h2{
+	background-color: var(--morado-oscuro);
+	color: var(--crema);
+	padding: 1.5rem 2rem;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
