@@ -12,6 +12,11 @@
 	box-sizing: border-box;
 }
 
+::selection, -moz-selection {
+  color: var(--morado);
+  background: var(--rojo-naranja-claro);
+}
+
 body{
 	font-family: "Gabarito", sans-serif;
 	font-optical-sizing: auto;
@@ -189,8 +194,19 @@ input[type="email"]{
 	max-width: 1092px;
 }
 
+#Precios{
+	background-color: var(--morado);
+	padding: 4rem 0;
+}
 
-::selection, -moz-selection {
-  color: var(--morado);
-  background: var(--rojo-naranja-claro);
+.prices{
+	max-width: 1376px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.price{
+	width: 30%;
+	background-color: var(--crema);
 }
