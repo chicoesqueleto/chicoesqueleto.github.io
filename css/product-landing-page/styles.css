@@ -8,6 +8,10 @@
 	--texto: #333333;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body{
 	font-family: "Gabarito", sans-serif;
 	font-optical-sizing: auto;
@@ -86,7 +90,7 @@ h2{
 
 #heading{
 	padding: 6rem 9.25rem;
-	max-width: 1144px;
+	max-width: 1440px;
 	margin: 0 auto;
 }
 
@@ -168,6 +172,25 @@ input[type="email"]{
 	justify-content: center;
 }
 
-.feature .icon img{
+.deli img{
+	position: relative;
+	top: .75rem;
+}
 
+#Experiencia{
+	background-color: var(--morado-oscuro);
+	padding: 4rem 0;
+}
+
+#video{
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1092px;
+}
+
+
+::selection, -moz-selection {
+  color: var(--morado);
+  background: var(--rojo-naranja-claro);
 }
