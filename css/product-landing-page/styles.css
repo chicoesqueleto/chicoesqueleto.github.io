@@ -25,6 +25,7 @@ body{
 	font-size: 1rem;
 	background-color: var(--crema);
 	color: var(--texto);
+	overflow-x: hidden;
 }
 
 h1, h2, h3{
@@ -36,7 +37,8 @@ h1, h2, h3{
 }
 
 .xl{
-	font-size: 3.25rem;
+	/*font-size: 3.25rem; */
+	font-size: 2.569rem;  /* responsive */
 }
 
 h2{
@@ -58,26 +60,31 @@ h2{
 }
 
 .nav{
-	display: flex;
-	justify-content: space-between;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
 	max-width: 1440px;
 	margin: 0 auto;
+	text-align: center; /* responsive */
+	display: inherit; /* responsive */	
 }
 
 #nav-bar{
-	display: flex;
-	align-self: center;
+	/*display: flex;*/
+	display: inherit; /* responsive */	
 }
 
 #nav-bar ul{
 	margin: 0;
 	padding: 0;
+	/*align-self: center;*/
 }
 
 #nav-bar li{
 	list-style: none;
-	display: inline-block;
-	margin-right: 2rem;
+	/*display: inline-block;*/
+	/*margin-right: 2rem;*/
+	display: block; /* responsive */
+	margin: 0 auto;
 }
 
 #nav-bar li:last-child{
@@ -95,9 +102,11 @@ h2{
 }
 
 #heading{
-	padding: 6rem 9.25rem;
+	/*padding: 6rem 9.25rem;*/
 	max-width: 1440px;
 	margin: 0 auto;
+	padding: 2rem 1rem 3rem 1rem; /* responsive */
+	word-break: break-word;
 }
 
 #heading h1{
@@ -117,7 +126,9 @@ input[type="email"]{
 	border-radius: 12px;
 	padding: 1rem 0.75rem;
 	margin-right: 1rem;
-	width: 45%;
+	/*width: 45%;*/
+	width: 100%; /* responsive */
+	margin-bottom: 1rem; /* responsive */
 }
 
 .button{
@@ -151,12 +162,15 @@ input[type="email"]{
 	display: flex;
 	gap: 3rem;
 	padding: 4rem 0;
+	flex-direction: column; /* responsive */
 }
 
 .feature{
 	width: 30%;
 	text-align: center;
 	color: var(--crema);
+	width: inherit; /* responsive */
+	padding: 0 1rem; /* responsive */
 }
 
 .feature h2{
@@ -186,7 +200,8 @@ input[type="email"]{
 
 #Experiencia{
 	background-color: var(--morado-oscuro);
-	padding: 4rem 0;
+	/*padding: 4rem 0;*/
+	padding: 0; /* responsive */
 }
 
 #video{
@@ -198,7 +213,8 @@ input[type="email"]{
 
 #Precios{
 	background-color: var(--morado);
-	padding: 4rem 0;
+	/*padding: 4rem 0;*/
+	padding: 2rem 0 1rem 0; /* responsive */
 }
 
 .prices{
@@ -207,14 +223,18 @@ input[type="email"]{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-start;
+	flex-direction: column; /* responsive */
+	padding: 0 1rem;
 }
 
 .price{
-	width: 30%;
+	/*width: 30%;*/
 	background-color: var(--crema);
 	border-radius: 12px;
 	text-align: center;
 	padding-bottom: 2rem;
+	width: 100%; /* responsive */
+	margin-bottom: 2rem; /* responsive */
 }
 
 .price h2{
@@ -248,13 +268,14 @@ input[type="email"]{
 
 footer{
 	background-color: var(--morado-oscuro);
-	text-align: center;
+	text-align: center; 
 	padding: 4rem 1rem;
 	color: var(--hueso);
 }
 
 footer ul, footer p{
 	margin: 0;
+	padding: 0;
 }
 
 footer ul{
@@ -262,9 +283,15 @@ footer ul{
 }
 
 footer li{
-	display: inline;
-	margin-right: 2rem;
+	/*display: inline;*/
+	/*margin-right: 2rem;*/
 	list-style: none;
+	display: block; /* responsive */
+	margin-bottom: 1rem; /* responsive */
+}
+
+footer li:last-child{
+	margin-right: 0;
 }
 
 footer li a{
@@ -275,3 +302,56 @@ footer li a:hover{
 	color: var(--hueso);
 }
 
+@media only screen and (min-width: 720px){
+	.xl{
+		font-size: 3.25rem;
+	}
+	.nav{
+		display: flex;
+		justify-content: space-between;
+	}
+	#nav-bar{
+		display: flex;
+	}
+	#nav-bar ul{
+		align-self: center;
+	}
+	#nav-bar li{
+		display: inline-block;
+		margin-right: 2rem;
+	}
+}
+
+@media only screen and (min-width: 1440px){
+	#heading{
+		padding: 6rem 9.25rem;
+	}
+	input[type="email"]{
+		width: 45%;
+		margin-bottom: 0;
+	}
+	.features{
+		flex-direction: row;
+	}	 	
+	.feature{
+		padding: 0;
+		width: 30%;
+	}
+	#Experiencia{
+		padding: 4rem 0;
+	}
+	#Precios{
+		padding: 4rem 0;
+	}
+	.prices{
+		flex-direction: row;
+	}
+	.price{
+		width: 30%;
+		margin-bottom: 0;
+	}
+	footer li{
+		display: inline;
+		margin-right: 2rem;
+	}
+}
