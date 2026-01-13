@@ -185,6 +185,17 @@ body {
   left: 42%;
 }
 
+.shirt{
+  font-size: 25px;
+  font-family: Helvetica, Sans-serif;
+  font-weight: bold;
+}
+
+.shirt div {
+  font-weight: initial;
+  top: 22.5px;
+  left: 12px;
+}
 .penguin-body::before {
   content: "";
   position: absolute;
