@@ -49,7 +49,8 @@ body {
   background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
   z-index: 3;
   position: absolute;
-  margin-top: -58px; 
+  margin-top: -58px;
+  height: calc(100vh - 300px);
 }
 
 .sun {
@@ -69,10 +70,18 @@ body {
   margin-top: 75px;
   z-index: 4;
   position: relative;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0ms;
 }
 
 .penguin * {
   position: absolute;
+}
+
+.penguin:active {
+  transform: scale(1.5);
+  cursor: not-allowed;
 }
 
 .penguin-head {
@@ -227,8 +236,12 @@ body {
 .arm.left {
   top: 35%;
   left: 5%;
-  transform-origin: top left;
-  transform: rotate(130deg) scaleX(-1); 
+  transform-origin: top left; 
+  transform: rotate(130deg) scaleX(-1);
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .arm.right{
