@@ -1,7 +1,7 @@
-:root{
+:root {
   --penguin-face: white;
+  --penguin-picorna: orange;
 }
-
 
 body {
   background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
@@ -169,7 +169,7 @@ body {
 
 .beak{
   height: 10%;
-  background-color: orange;
+  background-color: var(--penguin-picorna);
   border-radius: 50%;
 }
 
@@ -189,6 +189,10 @@ body {
   font-size: 25px;
   font-family: Helvetica, Sans-serif;
   font-weight: bold;
+  top: 165px;
+  left: 127.5px;
+  z-index: 1;
+  color: #6a6969;
 }
 
 .shirt div {
@@ -196,6 +200,7 @@ body {
   top: 22.5px;
   left: 12px;
 }
+
 .penguin-body::before {
   content: "";
   position: absolute;
@@ -206,4 +211,20 @@ body {
   left: 25%;
   border-radius: 0% 0% 100% 100%;
   opacity: 70%;
+}
+
+.foot {
+  width:  15%;
+  height: 30%;
+  background-color: var(--penguin-picorna);
+  top: 85%;
+  border-radius: 50%;
+}
+
+.foot.left{
+  left: 25%;
+}
+
+.foot.right{
+  right: 25%;
 }
