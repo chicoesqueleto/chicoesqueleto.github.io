@@ -17,6 +17,10 @@
   background: var(--rojo-naranja-claro);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
 	font-family: "Gabarito", sans-serif;
 	font-optical-sizing: auto;
