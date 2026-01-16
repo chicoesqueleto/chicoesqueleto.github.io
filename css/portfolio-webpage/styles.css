@@ -100,6 +100,7 @@ nav a{
 	text-align: center;
 	max-width: 1440px;
 	margin: 0 auto;
+	padding: 0 2rem;
 }
 
 #projects h2{
@@ -115,6 +116,7 @@ figure{
 
 figure img{
 	width: 100%;
+	margin-bottom: .5rem;
 }
 
 figcaption{
@@ -124,10 +126,11 @@ figcaption{
 .portfolio ul{
 	display: flex;
 	gap: 2.5rem 2rem;
+	flex-wrap: wrap;
 }
 
 .portfolio li{
-	width: 50%;
+	width: 48.8%
 }
 
 .portfolio-item a{
