@@ -2,6 +2,7 @@
 	--text: #333333;
 	--cream: #F1F0EB;
 	--bright: #FFFFFF;
+	--active: #FE6960;
 	--serif: "EB Garamond", serif;
 	--sans-serif: "Jost", sans-serif;
 }
@@ -23,24 +24,112 @@ body{
 	margin: 0;
 }
 
+a, a:visited{
+	color: var(--text);
+}
+
+a:hover{
+	color: var(--active);
+}
+
 ul{
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+
+h1, h2, h3{
+	margin: 0;
 }
 
 h1, h3{
 	font-weight: 400;
 }
 
-h2{
+h1{
+	font-size: 4.113rem;
+}
+
+h2, nav{
 	font-family: var(--sans-serif);
 	font-weight: 600;
 }
 
 header{
+	position: sticky;
+	top: 0;
 }
 
 nav{
 	background-color: var(--bright);
+	text-align: center;
+	padding: 1rem 0;
 }
 
+nav li{
+	display: inline-block;
+	margin-right: 2rem;
+}
+
+nav li:last-child{
+	margin-right: 0;
+}
+
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.888rem;
+	letter-spacing: 32%;
+	color: var(--text);
+}
+
+#welcome-section{
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: -4rem;
+}
+
+#welcome-section h1{
+	max-width: 57rem;
+}
+
+#projects{
+	text-align: center;
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+#projects h2{
+	text-transform: uppercase;
+	font-size: 1.125rem;
+	letter-spacing: 32%;
+	margin-bottom: 2rem;
+}
+
+figure{
+	margin: 0;
+}
+
+figure img{
+	width: 100%;
+}
+
+figcaption{
+	font-size: 1.8rem;
+}
+
+.portfolio ul{
+	display: flex;
+	gap: 2.5rem 2rem;
+}
+
+.portfolio li{
+	width: 50%;
+}
+
+.portfolio-item a{
+	text-decoration: none;
+}
