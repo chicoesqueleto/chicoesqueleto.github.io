@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/flappy-penguin/styles.css">
-	<title>Flappy Penguin</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/portfolio-webpage/styles.css">
+	<title>Portafolio Alejandro Narváez</title>
 </head>
 <body>
-	<div class="left-mountain"></div>
-	<div class="back-mountain"></div>
-	<div class="sun"></div>
-	<div class="penguin">
-		<div class="penguin-head">
-			<div class="face left"></div>
-			<div class="face right"></div>
-			<div class="chin"></div>
-			<div class="eye left">
-				<div class="eye-lid"></div> 
+	<header>
+		<nav class="navbar">
+			<ul>
+				<li><a>Info</a></li>
+				<li><a href="#work">Trabajos</a></li>
+				<li><a>Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="welcome-section" class="welcome">
+			<h1>Portafolio de Alejandro Narváez Isaza para el curso de Diseño Web Responsive de FreeCodeCamp</h1>
+		</section>
+		<section id="work" class="work">
+			<h2>Trabajos</h2>
+			<div class="portfolio">
+				<ul>
+					<li class="portfolio-item">
+						<a href="https://chicoesqueleto.github.io/05-css-certification-survey-form.html" target="_blank">
+							<figure>
+								<img src="images/survey-form.png" alt="Diseño de un formulario de encuesta" loading="lazy">
+								<figcaption><h3>Formulario de encuesta</h3></figcaption>
+							</figure>
+						</a>
+					</li>
+				</ul>
 			</div>
-      <div class="eye right">
-      	<div class="eye-lid"></div> 
-      </div>
-      <div class="blush left"></div>
-      <div class="blush right"></div>
-      <div class="beak top"></div>
-      <div class="beak bottom"></div>
-		</div>
-		<div class="shirt">
-			<div>💜</div>
-			<p>I CSS</p>
-		</div>
-    <div class="penguin-body">
-    	<div class="arm left"></div>
-      <div class="arm right"></div>
-    	<div class="foot left"></div>
-      <div class="foot right"></div>
-    </div>
-	</div>
-  <div class="ground"></div>
+		</section>
+	</main>
+	<footer>
+		<p>Puedes encontrarme en Github o escribirme un correo electrónico</p>
+		<ul>
+			<li><a href="https://github.com/chicoesqueleto/" target="_blank" id="profile-link">Github</a></li>
+			<li><a href="mailto:hola@fluorescente.design">Correo</a></li>
+		</ul>
+	</footer>	
 </body>
 </html>

@@ -1,0 +1,46 @@
+:root{
+	--text: #333333;
+	--cream: #F1F0EB;
+	--bright: #FFFFFF;
+	--serif: "EB Garamond", serif;
+	--sans-serif: "Jost", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+	background-color: var(--cream);
+	color: var(--text);
+	font-family: var(--serif);
+	font-optical-sizing: auto;
+	font-style: normal;
+	margin: 0;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+h1, h3{
+	font-weight: 400;
+}
+
+h2{
+	font-family: var(--sans-serif);
+	font-weight: 600;
+}
+
+header{
+}
+
+nav{
+	background-color: var(--bright);
+}
+
