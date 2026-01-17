@@ -48,6 +48,7 @@ h1, h3{
 
 h1{
 	font-size: 4.113rem;
+	line-height: 112%;
 }
 
 h2, nav{
@@ -124,13 +125,17 @@ figcaption{
 }
 
 .portfolio ul{
-	display: flex;
+/*	display: flex;
 	gap: 2.5rem 2rem;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
+	display: grid;
+	column-gap: 2rem;
+	row-gap: 2.5rem;
+	grid-template-columns: 1fr 1fr;
 }
 
 .portfolio li{
-	width: 48.8%
+	/*width: 48.8%*/
 }
 
 .portfolio-item a{
