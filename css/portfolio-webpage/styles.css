@@ -100,7 +100,7 @@ nav a{
 #projects{
 	text-align: center;
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 0 auto 8rem auto;
 	padding: 0 2rem;
 }
 
@@ -140,4 +140,20 @@ figcaption{
 
 .portfolio-item a{
 	text-decoration: none;
+}
+
+footer{
+	background-color: var(--bright);
+	max-width: 1376px;
+	margin: 0 auto;
+	border-radius: 2rem;
+	text-align: center;
+	padding: 4rem;
+	margin-bottom: 4rem;
+}
+
+footer p{
+	font-size: 3.25rem;
+
+
 }
