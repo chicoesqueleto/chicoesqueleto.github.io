@@ -148,12 +148,28 @@ footer{
 	margin: 0 auto;
 	border-radius: 2rem;
 	text-align: center;
-	padding: 4rem;
+	padding: 4rem 7.25rem;
 	margin-bottom: 4rem;
 }
 
 footer p{
 	font-size: 3.25rem;
+	margin: 0 0 2rem 0;
+}
 
+footer li{
+	display: inline-block;
+	margin-right: 2rem;
+}
 
+footer li:last-child{
+	margin-right: 0;
+}
+
+footer li .icon{
+	font-size: 3rem;
+}
+
+footer li a{
+	text-decoration: none;
 }
