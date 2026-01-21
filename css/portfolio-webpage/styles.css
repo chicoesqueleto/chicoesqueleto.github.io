@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -47,7 +48,7 @@ h1, h3{
 }
 
 h1{
-	font-size: 4.113rem;
+	font-size: 2.025rem;
 	line-height: 112%;
 }
 
@@ -69,7 +70,7 @@ nav{
 
 nav li{
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: 1rem;
 }
 
 nav li:last-child{
@@ -79,12 +80,13 @@ nav li:last-child{
 nav a{
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 0.888rem;
+	font-size: 0.781rem;
 	letter-spacing: 32%;
 	color: var(--text);
 }
 
 #welcome-section{
+	padding: 0 2rem;
 	height: 100vh;
 	text-align: center;
 	display: flex;
@@ -100,13 +102,13 @@ nav a{
 #projects{
 	text-align: center;
 	max-width: 1440px;
-	margin: 0 auto 8rem auto;
+	margin: 0 auto 4rem auto;
 	padding: 0 2rem;
 }
 
 #projects h2{
 	text-transform: uppercase;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	letter-spacing: 32%;
 	margin-bottom: 2rem;
 }
@@ -121,21 +123,15 @@ figure img{
 }
 
 figcaption{
-	font-size: 1.8rem;
+	font-size: 1.125rem;
+	line-height: 112%;
 }
 
 .portfolio ul{
-/*	display: flex;
-	gap: 2.5rem 2rem;
-	flex-wrap: wrap;*/
 	display: grid;
 	column-gap: 2rem;
 	row-gap: 2.5rem;
-	grid-template-columns: 1fr 1fr;
-}
-
-.portfolio li{
-	/*width: 48.8%*/
+	grid-template-columns: 1fr;
 }
 
 .portfolio-item a{
@@ -145,15 +141,15 @@ figcaption{
 footer{
 	background-color: var(--bright);
 	max-width: 1376px;
-	margin: 0 auto;
+	margin: 0 2rem;
 	border-radius: 2rem;
 	text-align: center;
-	padding: 4rem 7.25rem;
-	margin-bottom: 4rem;
+	padding: 2rem;
+	margin-bottom: 1rem;
 }
 
 footer p{
-	font-size: 3.25rem;
+	font-size: 1.8rem;
 	margin: 0 0 2rem 0;
 }
 
@@ -172,4 +168,61 @@ footer li .icon{
 
 footer li a{
 	text-decoration: none;
+}
+
+.hidden-xs{
+	display: none;
+}
+
+@media (min-width: 810px){
+	h1{
+		font-size: 3.25rem;
+	}
+	nav li{
+		margin-right: 2rem;
+	}
+	nav a{
+		font-size: 0.888rem;
+	}	
+	.portfolio ul{
+		grid-template-columns: 1fr 1fr;
+	}
+	#projects h2{
+		font-size: 1.125rem;
+	}
+	figcaption{
+		font-size: 1.6rem;
+	}
+	footer p{
+		font-size: 2.281rem;
+	}
+	.hidden-xs{
+		display: initial;
+	}
+	footer{
+		margin-bottom: 2rem;
+	}
+}
+
+@media (min-width: 1200px){
+	h1{
+		font-size: 4.113rem;
+	}
+	figcaption{
+		font-size: 1.8rem;
+	}
+	#projects{
+		margin: 0 auto 8rem auto;
+	}
+	footer{
+		margin: 0 auto;
+		padding: 4rem 7.25rem;
+		margin-bottom: 4rem;
+	}	
+	footer p{
+		font-size: 3.25rem;
+	}
+	.hidden-xs{
+		display: initial;
+	}
 }
