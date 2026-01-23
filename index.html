@@ -1,86 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Mr. Whiskers' Blog</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Event Hub</title>
+</head>
+
+<body>
     <header>
-      <h1>Welcome to Mr. Whiskers' Blog Page!</h1>
-      <figure>
-        <img
-          src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"
-          alt="a cat in the garden"
-        />
-        <figcaption>Mr. Whiskers in the Garden</figcaption>
-      </figure>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#posts">Posts</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <h1>Event Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#past-events">Past Events</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Hi there! I'm Jane Doe, a passionate writer who finds endless inspiration in the antics of my beloved cat, Mr. Whiskers.
-        </p>
-        <p>
-          His playful nature and boundless energy keeps me on my toes. I love him so much.
-        </p>
-      </section>
-      <section id="posts">
-        <h2>Posts</h2>
-        <article>
-          <h3>Mr. Whiskers' First Day Home</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>        
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas. Quisquam quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>    
-        </article>
-        <article>
-          <h3>Mr. Whiskers' First Bath</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
-            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
-            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
-            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
-            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>
-        </article>
-        <article>
-          <h3>Mr. Whiskers' First Birthday Party</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
-            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
-            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            quod, voluptates, quae, quos quibusdam dolorum quia nemo repudiandae
-            quidem voluptatum quas. Quisquam quod, voluptates, quae, quos
-            quibusdam dolorum quia nemo repudiandae quidem voluptatum quas.
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <address>
-                <p>Phone: <a href="tel:5555555555">555-555-5555</a></p>
-                <p>Email: <a href="mailto:fake@email.com">fake@email.com</a></p>
-            </address>
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>1<sup>st</sup> Mars Vinyl Records Fair</h3>
+                <p>Bring your old records and buy second hand records, we will also have snacks, t-shirts, accesories and more. <em>Date:</em> <time datetime="2026-02-07T10:00">February the 7<sup>th</sup>, from 10:00a.m. to 8:00p.m.</time> at Prado Park.</p>
+            </article>
+            <article>
+                <h3>2<sup>nd</sup> New Wave Festival</h3>
+                <p>Enjoy an evening with the most representative New Wave bands.<em>Date:</em> <time datetime="2026-02-14T18:00">February the 14<sup>th</sup>, from 6:00p.m. to 3:00a.m.</time></p>
+            </article>
         </section>
-    </footer>  
-  </body>
+        <section id="past-events">
+            <h2>Past Events</h2>
+            <article>
+                <h3>1<sup>st</sup> Mars Vinyl Records Fair</h3>
+                <p>The first time vinly collectors gather at Prado Park, we had Urban Vinly, Monkey Music and Vinyl Revolution. Visitors exchange records and enjoye <em>Date:</em> <time datetime="2025-12-26T10:00">December the 27<sup>th</sup>, from 10:00a.m. to 8:00p.m.</time> at Prado Park.</p>
+                <figure>
+                    <img src="images/vinyl-fair-01.jpg" alt="1st Mars Vinyl Records Fair at Prado Park">
+                </figure>    
+            </article>
+        </section>        
+    </main>        
+</body>
+
 </html>
