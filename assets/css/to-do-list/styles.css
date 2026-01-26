@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #D3E7E2;
+  background-image: url(../../images/to-do-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do-list-container{
+  background-color: #fff;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin: 4rem auto;
+}
+
+a{
+  text-decoration: none;
+  font-weight: 600;
+  color: #AC4EF4;
+}
+
+a:link{
+  color: #AC4EF4;
+}
+
+a:visited{
+  color: #F66969;
+}
+
+a:hover{
+  color: #4D78F9;
+}
+
+a:active{
+  color: #1FB1EF;
+}
+
+a:focus{
+  outline: 1px solid #1FB1EF;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+  background-color: #F0F8F6;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.input-label{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .5rem;
+}
+
+input{
+  margin-right: .5rem;
+}
+
+.sub-item{
+  margin-left: 2.5rem;
+}
+
+.sub-item li{
+  padding: .5rem 0;
+  margin-bottom: 0;
+}
