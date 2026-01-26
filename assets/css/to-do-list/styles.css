@@ -10,6 +10,7 @@ html {
   background-image: url(../../images/to-do-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Gabarito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
