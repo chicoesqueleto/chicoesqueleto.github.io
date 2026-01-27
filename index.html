@@ -1,62 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <title>Styled To-Do List</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Card</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/css/to-do-list/styles.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/blog-post-card/styles.css">
 </head>
-
 <body>
-  <div class="to-do-list-container">
-      <header>
-    <h1>To Do List</h1>
-  </header>  
   <main>
-    <ul class="todo-list">
-      <li>
-        <div class="input-label">
-          <input type="checkbox" id="styling-lists-and-links">
-          <label for="styling-lists-and-links">Responsive Web Design Certification at freeCodeCamp</label>
-        </div>
-        <ul class="sub-item">
-          <li><a class="sub-item-link" href="https://www.freecodecamp.org/learn/responsive-web-design-v9/" target="_blank">Certification link</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="input-label">
-          <input type="checkbox" id="frontend-ux-template-library">
-          <label for="frontend-ux-template-library">Front End for the UX Template library</label>
-        </div>
-        <ul class="sub-item">
-          <li><a class="sub-item-link" href="https://www.figma.com/design/klSfSjs0ZSm107kEa1bEh0/ux-template-library?node-id=0-1&p=f" target="_blank">Figma link</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="input-label">
-          <input type="checkbox" id="la-tienda-marciana-design">
-          <label for="la-tienda-marciana-design">Design the website for La Tienda Marciana</label>
-        </div>
-        <ul class="sub-item">
-          <li><a class="sub-item-link" href="https://latiendamarciana.com/" target="_blank">Actual website</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="input-label">
-          <input type="checkbox" id="la-tienda-marciana-design">
-          <label for="la-tienda-marciana-design">Front End for La Tienda Marciana</label>
-        </div>
-        <ul class="sub-item">
-          <li><a class="sub-item-link" href="https://latiendamarciana.com/" target="_blank">Actual website</a></li>
-        </ul>
-      </li>
-    </ul>
-  </main>   
-  </div>
+    <h1>Blog Post Card</h1>
+    <div class="blog-post-card">
+      <figure>
+        <img src="assets/images/top-5-recipes-of-2025.jpg" class="post-img" alt="A panel divided en five columns without gap, each column is filled with the picture of a recipe" loading="lazy">
+        <div class="post-content">
+          <h2 class="post-title">Top 5 Recipes of 2025</h2>
+          <p class="post-excerpt">Discover the top recipes our community has been raving about and sharing—if you haven’t tried them yet, be sure to add them to your culinary adventures for the coming year!</p>
+          <a class="read-more" href="https://nutritionstudies.org/top-5-recipes-of-2025/" target="_blank">Read More</a>
+        </div>  
+      </figure>  
+    </div>
+  </main>  
 </body>
-
 </html>
