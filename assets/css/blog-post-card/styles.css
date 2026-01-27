@@ -18,10 +18,7 @@ body{
   justify-content: center;
   align-items: center;
   color: #333;
-}
-
-main{
-  margin-top: 2rem;
+  height: 100vh;
 }
 
 figure{
@@ -81,8 +78,3 @@ h2{
 .read-more:hover{
   background-color: #B965F9;
 }
-
-
-
-
-
