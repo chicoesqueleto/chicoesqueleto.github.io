@@ -17,6 +17,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333;
 }
 
 main{
@@ -42,6 +43,10 @@ h1{
   margin-bottom: 2rem;
 }
 
+h2{
+  font-size: 1.75rem;
+}
+
 .blog-post-card{
   background-color: white;
   border-radius: 1rem;
@@ -63,6 +68,7 @@ h1{
   font-size: 1.125rem;
 }
 
+
 .read-more{
   color: #fff;
   background-color: #AC4EF4;
@@ -76,15 +82,6 @@ h1{
   background-color: #B965F9;
 }
 
-.post-title{
-  margin: .5rem;
-  color: #AC4EF4;
-}
-
-.post-excerpt{
-  margin: .5rem;
-  color: #333;
-}
 
 
 
