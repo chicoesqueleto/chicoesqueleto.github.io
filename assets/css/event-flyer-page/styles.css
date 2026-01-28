@@ -9,7 +9,8 @@ body{
   font-weight: 400;
   font-style: normal;
   padding: 50px 3rem;
-  width: calc(100% - 100px);
+  width: 100vw;
+  min-height: calc(100vh - 100px);
   background-color: #F2F2F0;
   margin: 0 auto;
 }
@@ -55,7 +56,7 @@ hr{
 
 main section{
   display: inline-block;
-  width: calc(49.8% - 1rem);
+  width: 48.3%;
   margin: 0 2rem 2rem 0;
 }
 
