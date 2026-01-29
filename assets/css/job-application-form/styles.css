@@ -74,6 +74,10 @@ select{
   font-style: normal;
 }
 
+option{
+	background-color: white;
+}
+
 input:placeholder, textarea:placeholder{
 	font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
