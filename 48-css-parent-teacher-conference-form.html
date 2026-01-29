@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting Card</title>
-    <link rel="stylesheet" href="assets/css/greeting-card/styles.css">
-  </head>
-  <body>
-    <div id="greeting-card" class="card">
-      <h1>Happy Birthday!</h1>
-      <p class="message">Wishing you all the happiness and joy on your special day!</p>
-      <div class="card-links">
-        <a href="#send" class="send-link">Send Card</a>
-        <a href="#share" class="share-link">Share on Social Media</a>
-      </div>
-    </div>
-    <section id="send">
-      <h2>Sending your card...</h2>
-      <p>Card successfully sent to your recipient!</p>
-    </section>
-    <section id="share">
-      <h2>Sharing your card...</h2>
-      <p>Your card was shared on social media!</p>
-    </section>  
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Teacher Conference Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/parent-teacher-conference/styles.css" />
+</head>
+
+<body>
+  <main class="container">
+    <h1 class="title center">Parent Teacher Conference Form</h1>
+    <p class="description center">Please fill out the form below to help schedule your parent-teacher conference.</p>
+    <form method="POST" action="">
+      <fieldset>
+        <legend>Student Information</legend>
+        <label for="student-name">Full Name: </label>
+        <input type="text" name="student-name" id="student-name" placeholder="E.g., Jane Doe" required>
+        <label for="grade">Student Grade: </label>
+        <input type="number" name="grade" id="grade" placeholder="E.g., 4" required></input>
+      </fieldset>
+      <fieldset>
+        <legend>Parent/Guardian Information</legend>
+        <label for="parent-name">Parent/Guardian Name: </label>
+        <input type="text" name="parent-name" id="parent-name" placeholder="E.g., Nancy Doe" required>
+      </fieldset>
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label for="email" class="contact-method">Email: </label>
+        <input type="radio" id="email" value="email" name="contact-method" class="contact-method-radio-btn" checked>
+        <label class="contact-method" for="phone">Phone: </label>
+        <input type="radio" value="phone" id="phone" name="contact-method" class="contact-method-radio-btn">
+      </fieldset> 
+      <fieldset>
+        <legend>Additional Notes</legend>
+        <label for="notes">Any specific concerns or topics you'd like to discuss?</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        <button class="submit-btn" type="submit">Submit Form</button>
+    </form>  
+  </main>
+</body>
+
 </html>
