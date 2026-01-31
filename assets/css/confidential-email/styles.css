@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html{
+	background: mintcream;
+  font-family: "Crimson Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  background-image: url(../../images/wood-background.jpg);
+}
+
+body{
+	
+}
+
+p{
+	font-size: 1.275rem;
+	line-height: 140%;
+}
+
+#email{
+	padding: 50px;
+	margin: 50px auto 50px auto;
+	width: 500px;
+	border: 2px solid whitesmoke;
+	background-color: #fff;
+	box-shadow: 4px 4px 11px -3px rgba(73,71,15,0.40);
+}
+
+#email p:not(.email-header p):last-child{
+	color: tomato;
+}
+
+.email-header{
+	margin-bottom: 3rem;
+	padding-bottom: 2rem;
+	border-bottom: 1px dotted #333;
+}
+
+.email-header p{
+	margin: 0 0 .125rem 0;
+	font-size: 1.125rem;
+}
+
+#confidential, #top-secret{
+	display: inline-block;
+	padding: .5rem; .75rem;
+	border: .5rem solid tomato;
+	font-weight: 700;
+	color: tomato;
+	mix-blend-mode: multiply;
+	font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: .2rem;
+}
+
+#confidential{
+	transform: rotate(12.5deg);
+	position: relative;
+	top: 2.5rem;
+	left: 14rem;
+}
+
+#top-secret{
+	transform: rotate(-25deg);
+	position: relative;
+	top: -3rem;
+}
+
+.blurred{
+	filter: blur(3px);
+}
