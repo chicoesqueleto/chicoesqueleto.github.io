@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: linen;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  /*background-image: url(../../images/eggshell.jpg);*/
+  background-color: #FFF4DF;
+  font-size: 24px;
+}
+
+.newspaper{
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 900px;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  margin: 3rem auto;
+  box-shadow: 4px 4px 11px 3px rgba(73,71,15,0.22);
+}
+
+.name{
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+}
+
+.name, .author{
+  text-transform: uppercase;
+}
+
+.headline{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.sub-headline{
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.author{
+  font-weight: bold;
+}
+
+.text{
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+.text::first-letter{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+
+
+
