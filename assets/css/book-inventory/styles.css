@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+}
+
+header, main{
+  max-width: 1136px;
+  margin: 0 auto;
+}
+
+table{
+  width: 100%;
+}
+
+th, td{
+  padding: 1rem;
+  text-align: left;
+}
+
+tr[class="read"]{
+  background-image: linear-gradient(to bottom, #FFF4DF, #E3FFDB);
+} 
+
+tr[class="to-read"]{
+  background-image: linear-gradient(to bottom, #FFF4DF, #FFE3EA);
+} 
+
+tr[class="in-progress"]{
+  background-image: linear-gradient(to bottom, #FFF4DF, #FFF0C1);
+}
+
+span{
+  display: inline-block;
+}
+
+/*.read span[class="status"]{
+  border: 2px solid #7BFFD3;
+  background-image: linear-gradient(to bottom, #7BFFD3, #94FF95);
+} 
+
+.to-read span[class="status"]{
+  border: 2px solid #FF6861;
+  background-image: linear-gradient(to bottom, #FF6861, #FFABB5);
+} 
+
+.in-progress span[class="status"]{
+  border: 2px solid #FFE826;
+  background-image: linear-gradient(to bottom, #FFE826, #FFB115);
+}*/
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid #7BFFD3;
+  background-image: linear-gradient(to bottom, #7BFFD3, #94FF95);
+} 
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #FF6861;
+  background-image: linear-gradient(to bottom, #FF6861, #FFABB5);
+} 
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #FFE826;
+  background-image: linear-gradient(to bottom, #FFE826, #FFB115);
+}
+
+span[class="status"], span[class^="rate"]{
+  height: 2.5rem;
+  width: 10rem;
+  padding: .5rem 1.5rem;
+  text-align: center; 
+}
+
+/*.status{
+  border-radius: 2rem;
+}*/
+
+span[class="status"]{
+  border-radius: 2rem;
+}
+
+span[class^="rate"] > span{
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin: 0 .5rem 0 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #fff;
+}
+
+span[class^="rate"] > span:last-child{
+  margin-right: 0;
+}
+
+span[class~="one"] > span:first-child{
+  background-image: linear-gradient(to bottom, #FFE826, #FFB115);
+}
+
+span[class~="two"] > span:nth-child(1), span[class~="two"] > span:nth-child(2) {
+  background-image: linear-gradient(to bottom, #FFE826, #FFB115);
+}
+
+span[class~="three"] > span{
+  background-image: linear-gradient(to bottom, #FFE826, #FFB115);
+}
