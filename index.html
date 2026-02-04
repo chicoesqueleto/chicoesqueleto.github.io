@@ -2,91 +2,82 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Book Inventory</title>
+    <title>Availability Table</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/book-inventory/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/availability-table/styles.css">
   </head>
   <body>
     <header>
-      <h1>Book Inventory</h1>
+      <h1>Availability Table</h1>
     </header>
     <main>
       <table>
-        <thead>
-          <tr>
-            <th scope="col">Title</th>
-            <th scope="col">Author</th>
-            <th scope="col">Category</th>
-            <th scope="col">Status</th>
-            <th scope="col">Rate</th>
-          </tr>
-        </thead>
         <tbody>
-          <tr class="read">
-            <td>Glamourama</td>
-            <td>Bret Easton Ellis</td>
-            <td>Fiction, Thriller</td>
-            <td>
-              <span class="status">Read</span>
-            </td>  
-            <td>
-              <span class="rate one">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </td>
+          <tr class="sharp">
+            <th class="time">9:00 AM</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
           </tr>
-          <tr class="read">
-            <td>The Death of Ivan Ilych</td>
-            <td>Leo Tolstoy</td>
-            <td>Fiction, Philosophy</td>
-            <td>
-              <span class="status">Read</span>
-            </td>  
-            <td>
-              <span class="rate two">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </td>
+          <tr class="half">
+            <th class="time">10:00 AM</th>
+            <td class="available-1"></td>
+            <td class="available-2"></td>
+            <td class="available-1"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
           </tr>
-          <tr class="in-progress">
-            <td>Anna Karenina</td>
-            <td>Leo Tolstoy</td>
-            <td>Fiction, Romance</td>
-            <td>
-              <span class="status">In Progress</span>
-            </td>  
-            <td>
-              <span class="rate three">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </td>
+          <tr class="sharp">
+            <th class="time">11:00 AM</th>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-5"></td>
+            <td class="available-1"></td>
           </tr>
-          <tr class="to-read">
-            <td>Imperialism: The Highest Stage of Capitalism</td>
-            <td>Vladimir Ilich Lenin</td>
-            <td>Politics, Philosophy</td>
-            <td>
-              <span class="status">To Read</span>
-            </td>  
-            <td>
-              <span class="rate three">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </td>
+          <tr class="half">
+            <th class="time">12:00 M</th>
+            <td class="available-5"></td>
+            <td class="available-0"></td>
+            <td class="available-1"></td>
+            <td class="available-3"></td>
+            <td class="available-2"></td>
+          </tr>
+          <tr class="sharp">
+            <th class="time">1:00 PM</th>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-3"></td>
+            <td class="available-5"></td>
+            <td class="available-1"></td>
+          </tr>
+          <tr class="half">
+            <th class="time">2:00 PM</th>
+            <td class="available-3"></td>
+            <td class="available-1"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
+            <td class="available-0"></td>
+          </tr>
+          <tr class="sharp">
+            <th class="time">3:00 PM</th>
+            <td class="available-1"></td>
+            <td class="available-0"></td>
+            <td class="available-2"></td>
+            <td class="available-4"></td>
+            <td class="available-5"></td>
           </tr>
         </tbody>
-      </table>  
+      </table>
+      <div id="legend">
+        <span>Availability</span>
+        <div id="legend-gradient"></div>
+      </div>  
     </main> 
   </body>
 </html>

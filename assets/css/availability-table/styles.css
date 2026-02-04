@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+:root{
+  --text: #333;
+  --color0: mediumaquamarine;
+  --color1: darkcyan;
+  --color2: darkseagreen;
+  --color3: darkorange;
+  --color4: indianred;
+  --color5: lightseagreen;
+  --solid-border: 1px solid var(--text);
+  --dashed-border: 1px dashed var(--text);
+}
+
+body{
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text);
+  background-color: mistyrose;
+}
+
+header{
+  text-align: center;
+}
+
+table{
+  margin: 0 auto;
+}
+
+.available-0{
+  background-color: var(--color0);
+}
+
+.available-1{
+  background-color: var(--color1);
+}
+
+.available-2{
+  background-color: var(--color2);
+}
+
+.available-3{
+  background-color: var(--color3);
+}
+
+.available-4{
+  background-color: var(--color4);
+}
+
+.available-5{
+  background-color: var(--color5);
+}
+
+.half td{
+  border-bottom: var(--dashed-border);
+}
+
+.sharp td{
+  border-bottom: var(--solid-border);
+}
+
+#legend{
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#legend-gradient{
+  background-image: linear-gradient(to right, var(--color0) 0% calc(100% / 6), 
+    var(--color1) calc(100% / 6) calc(100% / 6 * 2),
+    var(--color2) calc(100% / 6 * 2) calc(100% / 6 * 3),
+    var(--color3) calc(100% / 6 * 3) calc(100% / 6 * 4),
+    var(--color4) calc(100% / 6 * 4) calc(100% / 6 * 5),
+    var(--color5) calc(100% / 6 * 5) calc(100% / 6 * 6)
+  );
+  width: 12rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+
+/*.sharp th:not([class*="time"]) {
+    border-bottom: var(--solid-border);
+}*/
