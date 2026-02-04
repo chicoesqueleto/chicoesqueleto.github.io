@@ -4,14 +4,15 @@
 
 :root{
   --text: #333;
-  --color0: mediumaquamarine;
-  --color1: darkcyan;
-  --color2: darkseagreen;
-  --color3: darkorange;
-  --color4: indianred;
-  --color5: lightseagreen;
-  --solid-border: 1px solid var(--text);
-  --dashed-border: 1px dashed var(--text);
+  --background: #FFFBF6;
+  --color0: #F5F0FF;
+  --color1: #E9DEFF;
+  --color2: #CDB2FF;
+  --color3: #F5F0FF;
+  --color4: #A069FF;
+  --color5: #7F31FF;
+  --solid-border: 2px solid var(--text);
+  --dashed-border: 2px dashed var(--text);
 }
 
 body{
@@ -20,15 +21,21 @@ body{
   font-weight: 400;
   font-style: normal;
   color: var(--text);
-  background-color: mistyrose;
+  background-color: var(--background);
 }
 
 header{
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 table{
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
+  border-collapse: collapse;
+}
+
+td{
+  height: 2.5rem;
 }
 
 .available-0{
@@ -70,20 +77,54 @@ table{
   text-align: center;
 }
 
-#legend-gradient{
+#legend span{
+  font-size: 1.125rem;
+  display: block;
+  margin-bottom: .75rem;
+  font-weight: 600;
+}
+
+#legend p, #legend-gradient{
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+/*#legend-gradient{
   background-image: linear-gradient(to right, var(--color0) 0% calc(100% / 6), 
     var(--color1) calc(100% / 6) calc(100% / 6 * 2),
     var(--color2) calc(100% / 6 * 2) calc(100% / 6 * 3),
     var(--color3) calc(100% / 6 * 3) calc(100% / 6 * 4),
     var(--color4) calc(100% / 6 * 4) calc(100% / 6 * 5),
-    var(--color5) calc(100% / 6 * 5) calc(100% / 6 * 6)
+    var(--color5) calc(100% / 6 * 5) 100%
   );
   width: 12rem;
   height: 2rem;
   margin: 0 auto;
+}*/
+
+#legend-gradient{
+  background-image: linear-gradient(to right, var(--color0) 0% 16.666%, 
+    var(--color1) 16.666% 33.333%,
+    var(--color2) 33.333% 50%,
+    var(--color3) 50% 66.666%,
+    var(--color4) 66.666% 83.333%,
+    var(--color5) 83.333% 100%
+  );
+  width: 12rem;
+  height: 2rem;
+  margin: 0 1rem;
 }
 
 
-/*.sharp th:not([class*="time"]) {
-    border-bottom: var(--solid-border);
-}*/
+.time{
+  padding: 0 1rem 0 0;
+  position: relative;
+  top: 2.25rem;
+  text-align: right;
+}
+
+.theader th:not([class*="time"]){
+  padding: 0 1rem .75rem 1rem;
+}
+
