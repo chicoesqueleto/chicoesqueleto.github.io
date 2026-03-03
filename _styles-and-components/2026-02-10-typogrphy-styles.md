@@ -5,4 +5,3 @@ headings-heading: "Headings"
 paragraphs-heading: "Paragraphs"
 permalink: /typography-styles
 ---
-
