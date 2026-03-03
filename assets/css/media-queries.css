@@ -63,8 +63,12 @@
     gap: 2rem;
   }
   .colors-container{
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(12, 1fr);
     align-items: start;
+  }
+  .colors-container article{
+    overflow: hidden;
+    white-space: nowrap;
   }
   .buttons-container, .links-container{
     grid-template-columns: repeat(6, 1fr);
