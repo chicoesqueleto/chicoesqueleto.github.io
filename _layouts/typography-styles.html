@@ -11,7 +11,7 @@
     <div class="headings-container">
     {% for typography-heading-style in site.typography-heading-styles %}
       <article>
-        <h6>{{ typography-heading-style.heading }}</h6>
+        <h3 class="article-heading">{{ typography-heading-style.heading }}</h3>
         {{ typography-heading-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
       </article> 
     {% endfor %}
@@ -20,7 +20,7 @@
     <div class="paragraphs-container">
       {% for typography-paragraph-style in site.typography-paragraph-styles %}
         <article>
-          <h6>{{ typography-paragraph-style.heading }}</h6>
+          <h3 class="article-heading">{{ typography-paragraph-style.heading }}</h3>
           {{ typography-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
         </article> 
       {% endfor %}
@@ -28,7 +28,7 @@
     <div class="paragraphs-container">  
       {% for typography-bold-paragraph-style in site.typography-bold-paragraph-styles %}
         <article>
-          <h6>{{ typography-bold-paragraph-style.heading }}</h6>
+          <h3 class="article-heading">{{ typography-bold-paragraph-style.heading }}</h3>
           {{ typography-bold-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
         </article> 
       {% endfor %}

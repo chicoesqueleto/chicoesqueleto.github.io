@@ -11,7 +11,7 @@
     <div class="colors-container">
       {% for color in site.colors %}
       <article>
-        <h6>{{ color.heading }}</h6>
+        <h3 class="article-heading">{{ color.heading }}</h3>
         <div class="color-circle {{ color.color }}"></div>
       </article> 
       {% endfor %}
@@ -20,7 +20,7 @@
     <div class="buttons-container">
       {% for button in site.buttons %}
       <article>
-        <h6>{{ button.heading }}</h6>
+        <h3 class="article-heading">{{ button.heading }}</h3>
         <div class="button-container">
           <button class="{{ button.button-size }}" type="submit">{{ page.button-text }}</button>
         </div>  
@@ -28,10 +28,11 @@
       {% endfor %}     
     </div>
     <div class="links-container">
-      {% for button in site.buttons %}
+      {% for link in site.links %}
         <article>
+          <h3 class="article-heading">{{ link.heading }}</h3>
           <div class="link-container">
-            <a class="link"></a>
+            <a href="#" class="{{ link.link-size }}">{{ link.link-text }}</a>
           </div>  
         </article>  
       {% endfor %}

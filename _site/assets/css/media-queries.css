@@ -19,13 +19,14 @@
   /* Typography styles post end */
 
   /* Colors, buttons, images and icons post */
-  .colors-container{
-    grid-template-columns: repeat(5, 1fr);
+  .colors-container, .buttons-container, .links-container{
     gap: 1.5rem;
   }
-  .buttons-container{
+  .colors-container{
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .buttons-container, .links-container{
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
   }
   /* Colors, buttons, images and icons post end*/
 }
@@ -58,14 +59,15 @@
   /* Typography styles post end */
 
   /* Colors, buttons, images and icons post */
+  .colors-container, .buttons-container, .links-container{
+    gap: 2rem;
+  }
   .colors-container{
     grid-template-columns: repeat(10, 1fr);
     align-items: start;
-    gap: 2rem;
   }
-  .buttons-container{
+  .buttons-container, .links-container{
     grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
   }
   /* Colors, buttons, images and icons post end*/
 }
