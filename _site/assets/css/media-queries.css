@@ -1,0 +1,71 @@
+/* Sm screens */
+
+@media screen and (min-width: 641px){
+  .full-width{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  /* Typography styles post */
+  main .paragraphs-container{
+    margin-bottom: 4rem;
+  }
+  .headings-container{
+    margin-bottom: 4rem;
+  }
+  .headings-container, .paragraphs-container{
+    columns: 2;
+    gap: 1.5rem;
+  }
+  /* Typography styles post end */
+
+  /* Colors, buttons, images and icons post */
+  .colors-container{
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+  }
+  .buttons-container{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  /* Colors, buttons, images and icons post end*/
+}
+
+/* L screens */
+
+@media screen and (min-width: 1025px) {
+  :root{
+    --h6: 1.125rem;
+    --h5: 1.263rem;
+    --h4: 1.419rem;
+    --h3: 1.8rem;
+    --h2: 2.025rem;
+    --h1: 2.281rem;
+    --h-l: 2.563rem;
+    --h-xl: 2.875rem;
+    --h-xxl: 3.25rem;
+  }
+  .full-width{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* Typography styles post */
+  .headings-container, .paragraphs-container{
+    gap: 2rem;
+  }
+  .paragraphs-container{
+    columns: 3;
+  }
+  /* Typography styles post end */
+
+  /* Colors, buttons, images and icons post */
+  .colors-container{
+    grid-template-columns: repeat(10, 1fr);
+    align-items: start;
+    gap: 2rem;
+  }
+  .buttons-container{
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+  /* Colors, buttons, images and icons post end*/
+}

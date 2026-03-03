@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+</html>
+<body>
+  <header class="full-width ux-library-header">
+    <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+  </header>
+  <main class="full-width typography-styles-container">
+    <h2>{{ page.headings-heading }}</h2>
+    <div class="headings-container">
+    {% for typography-heading-style in site.typography-heading-styles %}
+      <article>
+        <h6>{{ typography-heading-style.heading }}</h6>
+        {{ typography-heading-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+      </article> 
+    {% endfor %}
+    </div>
+    <h2>{{ page.paragraphs-heading }}</h2>
+    <div class="paragraphs-container">
+      {% for typography-paragraph-style in site.typography-paragraph-styles %}
+        <article>
+          <h6>{{ typography-paragraph-style.heading }}</h6>
+          {{ typography-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+        </article> 
+      {% endfor %}
+    </div>
+    <div class="paragraphs-container">  
+      {% for typography-bold-paragraph-style in site.typography-bold-paragraph-styles %}
+        <article>
+          <h6>{{ typography-bold-paragraph-style.heading }}</h6>
+          {{ typography-bold-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+        </article> 
+      {% endfor %}
+    </div>    
+  </main>  
+<body>  
