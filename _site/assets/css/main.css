@@ -259,6 +259,11 @@ figure{
   margin: 0;
 }
 
+figure img{
+  width: 100%;
+  height: auto;
+}
+
 /* Buttons links */
 
 a{
@@ -424,7 +429,8 @@ button:focus, .button:focus, a:focus{
 .colors-container, 
 .buttons-container, 
 .links-container, 
-.arrow-links-container, 
+.arrow-links-container,
+.images-container,  
 .icons-container{
   margin-bottom: 3rem;
 }
@@ -461,7 +467,7 @@ button:focus, .button:focus, a:focus{
 .color-circle, 
 .button-container, 
 .link-container, 
-.arrow-link-container, 
+.arrow-link-container,
 .icon-container{
   margin-bottom: 1rem;
 }
@@ -480,7 +486,8 @@ button:focus, .button:focus, a:focus{
 
 .buttons-container, 
 .links-container, 
-.arrow-links-container{
+.arrow-links-container,
+.images-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;

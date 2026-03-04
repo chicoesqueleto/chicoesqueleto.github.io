@@ -43,7 +43,7 @@
     </div>
     <div class="arrow-links-container">
       <!-- Links Arrow Data -->
-      {% for item in site.data.arrow-links %}
+      {% for item in site.data.links-arrow %}
         <article>
           <div class="arrow-link-container">
             <a href="#" class="arrow-link {{ item.link-size }}">{{ item.link-text }}<span class="icon {{ item.icon }}"></span></a>
@@ -52,9 +52,20 @@
         </article>  
       {% endfor %}
     </div>
+    <!-- Images Data -->
+    <h2>{{ page.images-heading }}</h2>
+    <div class="images-container">
+      {% for item in site.data.images-placeholder %}
+      <article>
+        <figure>
+          <img src="{{ item.image }}" alt="{{ item.alt }}">
+        </figure> 
+      </article>
+      {% endfor %}     
+    </div>
     <!-- Icons Data -->
     <h2>{{ page.icons-heading }}</h2>
-    <h3>Interface</h3>
+    <h3>{{ page.icons-interface-heading }}</h3>
     <div class="icons-container">
       {% for item in site.data.icons-interface %}
       <article>
@@ -65,7 +76,7 @@
       </article>
       {% endfor %}     
     </div>
-    <h3>Platforms</h3>
+    <h3>{{ page.icons-platforms-heading }}</h3>
     <div class="icons-container">
       {% for item in site.data.icons-platforms %}
       <article>
@@ -75,6 +86,6 @@
         <h3 class="p-xs">{{ item.heading }}</h3>  
       </article>
       {% endfor %}     
-    </div> 
+    </div>
   </main>  
 <body>  

@@ -7,4 +7,7 @@ images-heading: "Images"
 icons-heading: "Icons"
 permalink: /colors-buttons-links-images-icons
 button-text: "Button"
+icons-images-heading: "Interface"
+icons-interface-heading: "Interface"
+icons-platforms-heading: "Platforms"
 ---
