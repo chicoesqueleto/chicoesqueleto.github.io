@@ -7,6 +7,7 @@
     <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
   </header>
   <main class="full-width">
+    <!-- Colors -->
     <h2>{{ page.colors-heading }}</h2>
     <div class="colors-container">
       {% for color in site.colors %}
@@ -16,6 +17,7 @@
       </article> 
       {% endfor %}
     </div>
+    <!-- Buttons and links -->
     <h2>{{ page.buttons-and-links-heading }}</h2>
     <div class="buttons-container">
       {% for button in site.buttons %}
@@ -37,6 +39,26 @@
         </article>  
       {% endfor %}
     </div>
-    <h1><span class="icon icon-heart"></span></h1>   
+    <div class="arrow-links-container">
+      {% for arrow-link in site.arrow-links %}
+        <article>
+          <h3 class="article-heading">{{ arrow-link.heading }}</h3>
+          <div class="arrow-link-container">
+            <a href="#" class="arrow-link {{ arrow-link.link-size }}">{{ arrow-link.link-text }}<span class="icon {{ arrow-link.icon }}"></span></a>
+          </div>  
+        </article>  
+      {% endfor %}
+    </div>
+    <!-- Icons -->
+    <h2>{{ page.icons-heading }}</h2>
+    <div class="icons-container">
+      {% for icon in site.icons %}
+      <article>
+        <div class="icon-container">
+          <span class="icon {{ icon.icon }}"></span>
+        </div>  
+      </article>
+      {% endfor %}     
+    </div>
   </main>  
 <body>  

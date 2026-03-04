@@ -19,13 +19,13 @@
   /* Typography styles post end */
 
   /* Colors, buttons, images and icons post */
-  .colors-container, .buttons-container, .links-container{
+  .colors-container, .buttons-container, .links-container, .arrow-links-container, .icons-container{
     gap: 1.5rem;
   }
-  .colors-container{
+  .colors-container, .icons-container{
     grid-template-columns: repeat(5, 1fr);
   }
-  .buttons-container, .links-container{
+  .buttons-container, .links-container, .arrow-links-container{
     grid-template-columns: repeat(3, 1fr);
   }
   /* Colors, buttons, images and icons post end*/
@@ -59,10 +59,10 @@
   /* Typography styles post end */
 
   /* Colors, buttons, images and icons post */
-  .colors-container, .buttons-container, .links-container{
+  .buttons-container, .links-container, .arrow-links-container, .icons-container{
     gap: 2rem;
   }
-  .colors-container{
+  .colors-container, .icons-container{
     grid-template-columns: repeat(12, 1fr);
     align-items: start;
   }
@@ -70,7 +70,7 @@
     overflow: hidden;
     white-space: nowrap;
   }
-  .buttons-container, .links-container{
+  .buttons-container, .links-container, .arrow-links-container{
     grid-template-columns: repeat(6, 1fr);
   }
   /* Colors, buttons, images and icons post end*/
