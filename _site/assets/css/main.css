@@ -420,15 +420,23 @@ nav{
   justify-content: space-between;
 }
 
-nav ul, nav li{
+nav ul{
   display: flex;
   align-items: center;
+}
+
+nav li{
+ list-style: none;
 }
 
 nav a{
   font-weight: var(--bold);
   border-bottom: none;
   color: var(--text);
+  line-height: 0;
+}
+
+.nav-logo li, .nav-logo a, .nav-social li, .nav-social a{
   display: inline-block;
   line-height: 0;
 }
@@ -438,11 +446,11 @@ nav a:hover{
   background-color: inherit;
 }
 
-.logo a{
+.nav-logo a{
   font-size: var(--h1);
 }
 
-.nav-links{
+.nav-links, .nav-social{
   margin-right: 2rem;
 }
 
@@ -454,8 +462,13 @@ nav a:hover{
   margin-right: 0;
 }
 
-.nav-social li a{
-  font-size: var(--h1);
+.nav-social li{
+  font-size: var(--h3);
+  margin-right: 1rem;
+}
+
+.nav-social li:last-child{
+  margin-right: 0;
 }
 
 /* Pages */
