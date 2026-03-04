@@ -313,16 +313,19 @@ button, .button{
   transition: var(--fade);
 }
 
-button:hover, .button:hover{
-  background-color: var(--neutral-70);
+button:hover, .button:hover, button:focus, .button:focus{
+  background-color: var(--neutral-20);
+  color: var(--text);
 }
 
 button:active, .button:active{
-  background-color: var(--neutral-80);
+  background-color: var(--neutral-10);
+  color: var(--text);
 }
 
-button:focus, .button:focus, a:focus{
+a:focus, button:focus, .button:focus{
   outline: 2px dotted var(--text);
+  outline-offset: 2px;
 }
 
 .button-xs{
