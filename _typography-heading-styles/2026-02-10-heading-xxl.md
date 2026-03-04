@@ -2,5 +2,6 @@
 heading: "Heading 1 xxl"
 ---
 
-# {{ site.headings-text }}
+# {% for item in site.data.typography-styles %}{{ item.heading }}{% endfor %}
 {: .h-xxl }
+

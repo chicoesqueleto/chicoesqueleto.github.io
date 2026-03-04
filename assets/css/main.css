@@ -54,6 +54,8 @@
   --extrabold: 800;
   --black: 900;
 
+  --rounded-border-01: .5rem;;
+
   --fade: all .4s ease;
   --fade-in: fadeIn 3s;
 
@@ -507,7 +509,7 @@ main{
   justify-content: center;
   align-items: center;
   background-color: var(--bright);
-  border-radius: .5rem;
+  border-radius: var(--rounded-border-01);
   box-shadow: var(--shadow);
 }
 
