@@ -377,6 +377,12 @@ button:focus, .button:focus, a:focus{
   font-size: var(--p-xl);
 }
 
+/* Pages */
+
+main{
+  margin-bottom: 6rem !important;
+}
+
 /* Typography styles post */
 
 .typography-styles-container{
