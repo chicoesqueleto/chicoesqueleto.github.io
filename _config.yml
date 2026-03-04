@@ -44,9 +44,7 @@ collections:
   typography-paragraph-styles:
     output: true
   typography-bold-paragraph-styles:
-    output: true
-  arrow-links:
-    output: true            
+    output: true           
   styles-and-components:
     output: true        
 
