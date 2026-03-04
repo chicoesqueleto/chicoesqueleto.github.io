@@ -13,7 +13,7 @@
       {% for item in site.data.colors %}
       <article>
         <div class="color-circle {{ item.color }}"></div>
-        <p class="p-xs">{{ item.text }}</p> 
+        <h3 class="p-xs">{{ item.heading }}</h3> 
       </article> 
       {% endfor %}
     </div>
@@ -26,7 +26,7 @@
         <div class="button-container">
           <button class="{{ item.button-size }}" type="submit">{{ page.button-text }}</button>
         </div>
-        <p class="p-xs">{{ item.text }}</p>   
+        <h3 class="p-xs">{{ item.heading }}</h3>   
       </article>
       {% endfor %}     
     </div>
@@ -37,7 +37,7 @@
           <div class="link-container">
             <a href="#" class="{{ item.link-size }}">{{ item.link-text }}</a>
           </div>
-          <p class="p-xs">{{ item.text }}</p>  
+          <h3 class="p-xs">{{ item.heading }}</h3>  
         </article>  
       {% endfor %}
     </div>
@@ -48,21 +48,33 @@
           <div class="arrow-link-container">
             <a href="#" class="arrow-link {{ item.link-size }}">{{ item.link-text }}<span class="icon {{ item.icon }}"></span></a>
           </div> 
-          <p class="p-xs">{{ item.text }}</p> 
+          <h3 class="p-xs">{{ item.heading }}</h3> 
         </article>  
       {% endfor %}
     </div>
     <!-- Icons Data -->
     <h2>{{ page.icons-heading }}</h2>
+    <h3>Interface</h3>
     <div class="icons-container">
-      {% for item in site.data.icons %}
+      {% for item in site.data.icons-interface %}
       <article>
         <div class="icon-container">
           <span class="icon {{ item.icon }}"></span>
         </div>
-        <p class="p-xs">{{ item.text }}</p>  
+        <h3 class="p-xs">{{ item.heading }}</h3>  
       </article>
       {% endfor %}     
     </div>
+    <h3>Platforms</h3>
+    <div class="icons-container">
+      {% for item in site.data.icons-platforms %}
+      <article>
+        <div class="icon-container">
+          <span class="icon {{ item.icon }}"></span>
+        </div>
+        <h3 class="p-xs">{{ item.heading }}</h3>  
+      </article>
+      {% endfor %}     
+    </div> 
   </main>  
 <body>  
