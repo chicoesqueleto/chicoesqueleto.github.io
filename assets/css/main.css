@@ -445,7 +445,7 @@ button:focus, .button:focus, a:focus{
   aspect-ratio: 1/1;
 }
 
-.color-circle, .button-container, .link-container, .arrow-link-container{
+.color-circle, .button-container, .link-container, .arrow-link-container, .icon-container{
   margin-bottom: 1rem;
 }
 
