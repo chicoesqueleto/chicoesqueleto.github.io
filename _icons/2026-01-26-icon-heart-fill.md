@@ -1,3 +1,0 @@
----
-icon: "icon-heart-fill"
----

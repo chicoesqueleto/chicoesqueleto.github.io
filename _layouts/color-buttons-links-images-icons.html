@@ -7,56 +7,60 @@
     <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
   </header>
   <main class="full-width">
-    <!-- Colors -->
+    <!-- Colors Data -->
     <h2>{{ page.colors-heading }}</h2>
     <div class="colors-container">
-      {% for color in site.colors %}
+      {% for item in site.data.colors %}
       <article>
-        <h3 class="article-heading">{{ color.heading }}</h3>
-        <div class="color-circle {{ color.color }}"></div>
+        <h3 class="article-heading">{{ item.heading }}</h3>
+        <div class="color-circle {{ item.color }}"></div>
       </article> 
       {% endfor %}
     </div>
     <!-- Buttons and links -->
     <h2>{{ page.buttons-and-links-heading }}</h2>
     <div class="buttons-container">
-      {% for button in site.buttons %}
+      <!-- Buttons Data -->
+      {% for item in site.data.buttons %}
       <article>
-        <h3 class="article-heading">{{ button.heading }}</h3>
+        <h3 class="article-heading">{{ item.heading }}</h3>
         <div class="button-container">
-          <button class="{{ button.button-size }}" type="submit">{{ page.button-text }}</button>
+          <button class="{{ item.button-size }}" type="submit">{{ page.button-text }}</button>
         </div>  
       </article>
       {% endfor %}     
     </div>
     <div class="links-container">
-      {% for link in site.links %}
+      <!-- Links Data -->
+      {% for item in site.data.links %}
         <article>
-          <h3 class="article-heading">{{ link.heading }}</h3>
+          <h3 class="article-heading">{{ item.heading }}</h3>
           <div class="link-container">
-            <a href="#" class="{{ link.link-size }}">{{ link.link-text }}</a>
+            <a href="#" class="{{ item.link-size }}">{{ item.link-text }}</a>
           </div>  
         </article>  
       {% endfor %}
     </div>
     <div class="arrow-links-container">
-      {% for arrow-link in site.arrow-links %}
+      <!-- Links Arrow Data -->
+      {% for item in site.data.arrow-links %}
         <article>
-          <h3 class="article-heading">{{ arrow-link.heading }}</h3>
+          <h3 class="article-heading">{{ item.heading }}</h3>
           <div class="arrow-link-container">
-            <a href="#" class="arrow-link {{ arrow-link.link-size }}">{{ arrow-link.link-text }}<span class="icon {{ arrow-link.icon }}"></span></a>
+            <a href="#" class="arrow-link {{ item.link-size }}">{{ item.link-text }}<span class="icon {{ item.icon }}"></span></a>
           </div>  
         </article>  
       {% endfor %}
     </div>
-    <!-- Icons -->
+    <!-- Icons Data -->
     <h2>{{ page.icons-heading }}</h2>
     <div class="icons-container">
-      {% for icon in site.icons %}
+      {% for item in site.data.icons %}
       <article>
         <div class="icon-container">
-          <span class="icon {{ icon.icon }}"></span>
-        </div>  
+          <span class="icon {{ item.icon }}"></span>
+        </div>
+        <p class="p-xs">{{ item.text }}</p>  
       </article>
       {% endfor %}     
     </div>

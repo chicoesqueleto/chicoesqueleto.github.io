@@ -431,6 +431,14 @@ button:focus, .button:focus, a:focus{
   gap: 1rem;
 }
 
+.icons-container{
+  text-align: center;
+}
+
+.icons-container p{
+  margin-bottom: 0;
+}
+
 .color-circle, .icon-container{
   width: 100%;
   height: auto;
@@ -439,6 +447,10 @@ button:focus, .button:focus, a:focus{
 
 .color-circle{
   border-radius: 50%;
+}
+
+.icon-container{
+  margin-bottom: 1rem;
 }
 
 .icon-container .icon{

@@ -45,15 +45,7 @@ collections:
     output: true
   typography-bold-paragraph-styles:
     output: true
-  colors:
-    output: true  
-  buttons:
-    output: true  
-  links:
-    output: true 
   arrow-links:
-    output: true  
-  icons:
     output: true            
   styles-and-components:
     output: true        
