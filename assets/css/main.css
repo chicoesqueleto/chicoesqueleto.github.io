@@ -322,7 +322,7 @@ button:active, .button:active{
 }
 
 button:focus, .button:focus, a:focus{
-  outline: 2px dotted var(--neutral-80);
+  outline: 2px dotted var(--text);
 }
 
 .button-xs{
