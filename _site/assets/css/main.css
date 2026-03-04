@@ -431,11 +431,11 @@ button:focus, .button:focus, a:focus{
   gap: 1rem;
 }
 
-.icons-container{
+.colors-container, .buttons-container, .icons-container, .links-container, .arrow-links-container {
   text-align: center;
 }
 
-.icons-container p{
+.colors-container p, .icons-container p, .links-container p, .arrow-links-container p{
   margin-bottom: 0;
 }
 
@@ -445,12 +445,12 @@ button:focus, .button:focus, a:focus{
   aspect-ratio: 1/1;
 }
 
-.color-circle{
-  border-radius: 50%;
+.color-circle, .button-container, .link-container, .arrow-link-container{
+  margin-bottom: 1rem;
 }
 
-.icon-container{
-  margin-bottom: 1rem;
+.color-circle{
+  border-radius: 50%;
 }
 
 .icon-container .icon{

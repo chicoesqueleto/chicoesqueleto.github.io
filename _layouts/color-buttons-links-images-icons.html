@@ -12,8 +12,8 @@
     <div class="colors-container">
       {% for item in site.data.colors %}
       <article>
-        <h3 class="article-heading">{{ item.heading }}</h3>
         <div class="color-circle {{ item.color }}"></div>
+        <p class="p-xs">{{ item.text }}</p> 
       </article> 
       {% endfor %}
     </div>
@@ -23,10 +23,10 @@
       <!-- Buttons Data -->
       {% for item in site.data.buttons %}
       <article>
-        <h3 class="article-heading">{{ item.heading }}</h3>
         <div class="button-container">
           <button class="{{ item.button-size }}" type="submit">{{ page.button-text }}</button>
-        </div>  
+        </div>
+        <p class="p-xs">{{ item.text }}</p>   
       </article>
       {% endfor %}     
     </div>
@@ -34,10 +34,10 @@
       <!-- Links Data -->
       {% for item in site.data.links %}
         <article>
-          <h3 class="article-heading">{{ item.heading }}</h3>
           <div class="link-container">
             <a href="#" class="{{ item.link-size }}">{{ item.link-text }}</a>
-          </div>  
+          </div>
+          <p class="p-xs">{{ item.text }}</p>  
         </article>  
       {% endfor %}
     </div>
@@ -45,10 +45,10 @@
       <!-- Links Arrow Data -->
       {% for item in site.data.arrow-links %}
         <article>
-          <h3 class="article-heading">{{ item.heading }}</h3>
           <div class="arrow-link-container">
             <a href="#" class="arrow-link {{ item.link-size }}">{{ item.link-text }}<span class="icon {{ item.icon }}"></span></a>
-          </div>  
+          </div> 
+          <p class="p-xs">{{ item.text }}</p> 
         </article>  
       {% endfor %}
     </div>
