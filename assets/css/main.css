@@ -56,6 +56,8 @@
 
   --rounded-border-01: .5rem;;
 
+  --button-icon-space: .5rem;
+
   --fade: all .4s ease;
   --fade-in: fadeIn 3s;
 
@@ -67,7 +69,6 @@
 }
 
 html{
-  background-color: var(--neutral-0);
   color: var(--text);
   font-family: var(--paragraphs);
   font-optical-sizing: auto;
@@ -89,6 +90,11 @@ body{
 .full-width{
   max-width: 1440px;
   padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.boxed-width{
+  max-width: 1216px;
   margin: 0 auto;
 }
 
@@ -279,6 +285,7 @@ a{
 a:hover{
   color: var(--text);
   background-color: var(--neutral-10);
+  text-decoration: none;
 }
 
 a:active{
@@ -311,11 +318,22 @@ button, .button{
   margin: 0;
   cursor: pointer;
   transition: var(--fade);
+  display: flex;
+  align-items: center;
+}
+
+.button-icon-right span{
+  margin-left: var(--button-icon-space);
+}
+
+.button-icon-left span{
+  margin-right: var(--button-icon-space);
 }
 
 button:hover, .button:hover, button:focus, .button:focus{
   background-color: var(--neutral-20);
   color: var(--text);
+  text-decoration: none;
 }
 
 button:active, .button:active{
@@ -382,17 +400,75 @@ a:focus, button:focus, .button:focus{
   font-size: var(--p-xl);
 }
 
+/* Lists */
+
+ul, li{
+  padding: 0;
+  margin: 0;
+}
+
+/* Components */
+
+.nav-container{
+  background-color: var(--neutral-10);
+  padding: 1rem 0;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul, nav li{
+  display: flex;
+  align-items: center;
+}
+
+nav a{
+  font-weight: var(--bold);
+  border-bottom: none;
+  color: var(--text);
+  display: inline-block;
+  line-height: 0;
+}
+
+nav a:hover{
+  color: var(--neutral-70);
+  background-color: inherit;
+}
+
+.logo a{
+  font-size: var(--h1);
+}
+
+.nav-links{
+  margin-right: 2rem;
+}
+
+.nav-links li{
+  margin-right: 1.5rem;
+}
+
+.nav-links li:last-child{
+  margin-right: 0;
+}
+
+.nav-social li a{
+  font-size: var(--h1);
+}
+
 /* Pages */
+
+.basic-styles-and-component{
+  background-color: var(--neutral-0);
+}
 
 main{
   margin-bottom: 6rem !important;
 }
 
 /* Typography styles post */
-
-.typography-styles-container{
-  margin-bottom: 1rem;
-}
 
 .ux-library-header{
   padding-top: 3rem;

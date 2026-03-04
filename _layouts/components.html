@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="basic-styles-and-components">
+{% include basic-styles-and-components-head.html %}
+</html>
+<body>
+  <header class="full-width ux-library-header">
+    <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+  </header>
+  <main>
+    <div class="full-width">
+      <h2>{{ page.nav-heading }}</h2>
+    </div>
+    <!-- Nav -->
+    <div class="nav-container">
+      <nav class="boxed-width">
+        <ul class="logo">
+          <li><a href="#"><span class="icon icon-logo"></span></a></li>
+        </ul>
+        <ul class="links-social-buttons-search">
+          <li>
+            <ul class="nav-links">
+              <li><a href="#">Link 01</a></li>
+              <li><a href="#">Link 02</a></li>
+              <li><a href="#">Link 03</a></li>
+              <li><a href="#">Link 04</a></li>
+              <li><a href="#">Link 05</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="nav-social">
+              <li><a href="#"><span class="icon icon-pixelfed"></span></a></li>
+              <li><a href="#"><span class="icon icon-xiao-hong-shu"></span></a></li>
+              <li><a href="#"><span class="icon icon-wechat"></span></a></li>
+            </ul>  
+          </li>
+          <li>
+            <ul>
+              <li><a href="#" class="button button-s">Button</a></li>
+              <li><a href="#" class="button button-icon-right button-ghost button-s">Button<span class="icon icon-heart-fill"></span></a></li>
+            </ul> 
+          </li>
+          <li>
+            <a class="icon icon-search"></a>
+          </li>   
+        </ul>  
+      </nav>
+    </div>  
+  </main>
+  {% include basic-styles-and-components-footer.html %}   
+<body> 
