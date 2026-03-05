@@ -436,7 +436,11 @@ nav a{
   line-height: 0;
 }
 
-.nav-logo li, .nav-logo a, .nav-social li, .nav-social a{
+.nav-logo li, 
+.nav-logo a, 
+.nav-social li, 
+.nav-social a,
+.search{
   display: inline-block;
   line-height: 0;
 }
@@ -450,25 +454,35 @@ nav a:hover{
   font-size: var(--h1);
 }
 
-.nav-links, .nav-social{
-  margin-right: 2rem;
-}
-
-.nav-links li{
+.nav-links, .nav-social, .nav-buttons{
   margin-right: 1.5rem;
 }
 
-.nav-links li:last-child{
-  margin-right: 0;
+.nav-links{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-social{
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-social li{
   font-size: var(--h3);
-  margin-right: 1rem;
 }
 
-.nav-social li:last-child{
-  margin-right: 0;
+.nav-social li a:hover{
+  color: var(--neutral-70);
+}
+
+.nav-buttons{
+  display: flex;
+  gap: .75rem;
+}
+
+.search a{
+  font-size: var(--h4);
 }
 
 /* Pages */
