@@ -87,15 +87,17 @@ body{
   font-size: var(--p-base);
 }
 
-.full-width{
-  max-width: 1440px;
+.full-width, .boxed-width{
   padding: 0 1rem;
   margin: 0 auto;
 }
 
+.full-width{
+  max-width: 1440px;
+}
+
 .boxed-width{
   max-width: 1216px;
-  margin: 0 auto;
 }
 
 ::selection, -moz-selection{
@@ -485,7 +487,7 @@ nav a:hover{
   width: 100%;
   height: 2px;
   position: relative;
-  top: 1.25rem;
+  top: 1.28rem;
   margin: 0 auto;
   background-color: var(--neutral-70);
   transition: all 0.5s cubic-bezier(1, 0.25, 0, 0.75) 0s;
@@ -498,7 +500,7 @@ nav a:hover{
   -webkit-transform: scaleX(1);
 }
 
-.nav-social{
+.nav-social, .search-toggle-navigation{
   display: flex;
   gap: 1rem;
 }
@@ -516,8 +518,8 @@ nav a:hover{
   gap: .75rem;
 }
 
-.search a{
-  font-size: var(--h4);
+.search a, .toggle-navigation a{
+  font-size: var(--h3);
 }
 
 /* Pages */

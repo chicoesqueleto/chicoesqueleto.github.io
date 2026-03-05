@@ -1,19 +1,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
+  <title>{{ site.title }} | {{ page.title }}</title>
   <!-- Uikit CSS -->
   <link rel="stylesheet" href="{{"assets/css/uikit/uikit.min.css" | relative_url }}" media="print" onload="this.media='all'">
+  <!-- Icomoon -->
+  <link rel="stylesheet" href="{{"assets/css/icomoon.css" | relative_url }}">
   <!-- Custom styles -->
   <link rel="stylesheet" href="{{"assets/css/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{"assets/css/media-queries.css" | relative_url }}">
-  <!-- Icomoon -->
-  <link rel="stylesheet" href="{{"assets/css/icomoon.css" | relative_url }}" media="print" onload="this.media='all'">
   <!-- Jekyll SEO -->
   {% seo %}
   <!-- Noscript fallback -->
   <noscript>
-    <link rel="stylesheet" href="{{ "assets/css/icomoon.css" | relative_url }}">
     <link rel="stylesheet" href="{{"assets/css/uikit/uikit.min.css" | relative_url }}">
   </noscript>
 </head>  

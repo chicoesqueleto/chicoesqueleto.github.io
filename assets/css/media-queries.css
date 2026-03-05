@@ -1,7 +1,7 @@
 /* Sm screens */
 
 @media screen and (min-width: 641px){
-  .full-width{
+  .full-width, .boxed-width{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -60,6 +60,9 @@
     --h-xxl: 3.25rem;
   }
   /* Display Hidden */
+  .hidden-l{
+    display: none;
+  }
   .visible-l{
     display: inherit;
   }

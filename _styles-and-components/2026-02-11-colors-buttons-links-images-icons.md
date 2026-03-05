@@ -1,5 +1,6 @@
 ---
 layout: color-buttons-links-images-icons
+title: "02 Colors, buttons, links, images and icons"
 heading: "02 Colors, buttons, links, images and icons"
 colors-heading: "Colors"
 buttons-and-links-heading: "Buttons and links"
