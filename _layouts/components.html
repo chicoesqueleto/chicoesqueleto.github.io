@@ -7,55 +7,116 @@
     <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
   </header>
   <main>
-    <div class="full-width">
-      <h2>{{ page.nav-heading }}</h2>
-    </div>
-    <!-- Nav -->
-    <div class="nav-container">
-      <nav class="boxed-width">
-        <ul class="nav-logo">
-          {% for item in site.data.logo %}
-          <li><a href="{{ item.url }}" target="{{ item.target }}"><span class="icon icon-{{ item.logo }}"></span></a></li>
-          {% endfor %}
-        </ul>
-        <ul class="links-social-buttons-search">
-          <li class="hidden-xs visible-sm visible-l">
-            <ul class="nav-links">
-            <!-- Links Data -->
-            {% for item in site.data.main-nav-links %}
-            <li>
-              <a href="{{ item.url }}" target="{{ item.target }}">{{ item.link-text }}</a>
-            </li>
+    <section>
+      <div class="full-width">
+        <h2>{{ page.nav-heading }}</h2>
+      </div>
+      <!-- Nav -->
+      <div class="nav-container">
+        <nav class="boxed-width">
+          <ul class="nav-logo">
+            {% for item in site.data.logo %}
+            <li><a href="{{ item.url }}" target="{{ item.target }}"><span class="icon icon-{{ item.logo }}"></span></a></li>
             {% endfor %}
-            </ul>
-          </li>
-          <li>
-            <ul class="nav-platforms">
-              {% for item in site.data.platform-links %}
-              <li><a href="{{ item.url }}" target="{{ item.target }}"><span class="icon icon-{{ item.platform }}"></span></a></li>
-              {% endfor %}
-            </ul>  
-          </li>
-          <li class="hidden-xs hidden-sm visible-l">
-            <ul class="nav-buttons">
-              {% for item in site.data.main-nav-buttons %}
-              <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
-              {% endfor %}
-            </ul> 
-          </li>
-          <li>
-            <ul class="search-toggle-navigation">
-              <li class="search">
-                <a href="#" class="icon icon-search"></a>
+          </ul>
+          <ul class="links-social-buttons-search">
+            <li class="hidden-xs visible-sm visible-l">
+              <ul class="nav-links">
+              <!-- Links Data -->
+              {% for item in site.data.main-nav-links %}
+              <li>
+                <a href="{{ item.url }}" target="{{ item.target }}">{{ item.link-text }}</a>
               </li>
-              <li class="toggle-navigation visible-xs visible-m hidden-l">
-                <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
-              </li>  
-            </ul>
-          </li>    
-        </ul>  
-      </nav>
-    </div>  
+              {% endfor %}
+              </ul>
+            </li>
+            <li>
+              <ul class="nav-platforms">
+                {% for item in site.data.platform-links %}
+                <li><a href="{{ item.url }}" target="{{ item.target }}"><span class="icon icon-{{ item.platform }}"></span></a></li>
+                {% endfor %}
+              </ul>  
+            </li>
+            <li class="hidden-xs hidden-sm visible-l">
+              <ul class="nav-buttons">
+                {% for item in site.data.main-nav-buttons %}
+                <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
+                {% endfor %}
+              </ul> 
+            </li>
+            <li>
+              <ul class="search-toggle-navigation">
+                <li class="search">
+                  <a href="#" class="icon icon-search"></a>
+                </li>
+                <li class="toggle-navigation visible-xs visible-m hidden-l">
+                  <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
+                </li>  
+              </ul>
+            </li>    
+          </ul>  
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div class="full-width">
+        <h2>{{ page.header-backgrond-heading }}</h2>
+      </div>
+      <!-- Header Background-->
+      <header class="header-background">
+        <div class="boxed-width header-content">
+          <div class="header-text">
+            {% for item in site.data.header-texts %}
+            <h1 class="h-xxl">{{ item.heading }}</h1>
+            <p class="p-base">{{ item.text }}</p>
+            {% endfor %}
+          </div>  
+          <ul class="header-buttons">
+            {% for item in site.data.header-buttons %}
+            <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
+            {% endfor %}
+          </ul>  
+        </div>
+      </header>
+    </section>
+    <section>
+      <div class="full-width">
+        <h2>Header Two Columns</h2>
+      </div>
+      <!-- Header Two Columns -->
+      <header class="header-two-columns full-width">
+        <!-- Slideshow -->
+        <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true" loading="lazy">
+          <div class="slideshow-content" tabindex="-1">
+            <div class="uk-slideshow-items">
+              <div>
+                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
+              </div>
+              <div>
+                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
+              </div>
+            </div>
+            <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+            <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+            <ul class="uk-slideshow-nav uk-dotnav"></ul>
+          </div>  
+        </div> 
+        <!-- Text  -->
+        <div class="header-two-columns-content">
+          <div class="header-text">
+            {% for item in site.data.header-texts %}
+            <h1 class="h-xxl">{{ item.heading }}</h1>
+            <p class="p-base">{{ item.text }}</p>
+            {% endfor %}
+          </div>  
+          <ul class="header-buttons">
+            {% for item in site.data.header-buttons %}
+            <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </header>  
+    </section>  
   </main>
   {% include basic-styles-and-components-footer.html %}   
 <body> 

@@ -13,6 +13,13 @@
     display: inherit;
   }
   /* Components */
+  /*Header Two Columns*/
+  .header-two-columns{
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0 !important;
+    gap: 1.5rem;
+    align-items: start;
+  }
   /* Typography styles post */
   main .paragraphs-container{
     margin-bottom: 4rem;
@@ -70,6 +77,12 @@
   .full-width{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  /*Components*/
+  /*Header Two Columns*/
+  .header-two-columns{
+    gap: 2rem;
+    align-items: center;
   }
   /* Typography styles post */
   .headings-container, .paragraphs-container{

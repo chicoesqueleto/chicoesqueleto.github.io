@@ -44,69 +44,134 @@
 </h1>
   </header>
   <main>
-    <div class="full-width">
-      <h2>Navigation</h2>
-    </div>
-    <!-- Nav -->
-    <div class="nav-container">
-      <nav class="boxed-width">
-        <ul class="nav-logo">
-          
-          <li><a href="#" target="_self"><span class="icon icon-logo"></span></a></li>
-          
-        </ul>
-        <ul class="links-social-buttons-search">
-          <li class="hidden-xs visible-sm visible-l">
-            <ul class="nav-links">
-            <!-- Links Data -->
+    <section>
+      <div class="full-width">
+        <h2>Navigation</h2>
+      </div>
+      <!-- Nav -->
+      <div class="nav-container">
+        <nav class="boxed-width">
+          <ul class="nav-logo">
             
-            <li>
-              <a href="#" target="_self">Link 01</a>
-            </li>
+            <li><a href="#" target="_self"><span class="icon icon-logo"></span></a></li>
             
-            <li>
-              <a href="#" target="_self">Link 02</a>
-            </li>
-            
-            <li>
-              <a href="#" target="_self">Link 03</a>
-            </li>
-            
-            </ul>
-          </li>
-          <li>
-            <ul class="nav-platforms">
+          </ul>
+          <ul class="links-social-buttons-search">
+            <li class="hidden-xs visible-sm visible-l">
+              <ul class="nav-links">
+              <!-- Links Data -->
               
-              <li><a href="#" target="_blank"><span class="icon icon-weibo"></span></a></li>
-              
-              <li><a href="#" target="_blank"><span class="icon icon-xiao-hong-shu"></span></a></li>
-              
-              <li><a href="#" target="_blank"><span class="icon icon-wechat"></span></a></li>
-              
-            </ul>  
-          </li>
-          <li class="hidden-xs hidden-sm visible-l">
-            <ul class="nav-buttons">
-              
-              <li><a href="#" class="button button-s  "><span class=""></span>Button<span class=""></span></a></li>
-              
-              <li><a href="#" class="button button-s button-ghost button-icon-right"><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
-              
-            </ul> 
-          </li>
-          <li>
-            <ul class="search-toggle-navigation">
-              <li class="search">
-                <a href="#" class="icon icon-search"></a>
+              <li>
+                <a href="#" target="_self">Link 01</a>
               </li>
-              <li class="toggle-navigation visible-xs visible-m hidden-l">
-                <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
-              </li>  
-            </ul>
-          </li>    
-        </ul>  
-      </nav>
-    </div>  
+              
+              <li>
+                <a href="#" target="_self">Link 02</a>
+              </li>
+              
+              <li>
+                <a href="#" target="_self">Link 03</a>
+              </li>
+              
+              </ul>
+            </li>
+            <li>
+              <ul class="nav-platforms">
+                
+                <li><a href="#" target="_blank"><span class="icon icon-weibo"></span></a></li>
+                
+                <li><a href="#" target="_blank"><span class="icon icon-xiao-hong-shu"></span></a></li>
+                
+                <li><a href="#" target="_blank"><span class="icon icon-wechat"></span></a></li>
+                
+              </ul>  
+            </li>
+            <li class="hidden-xs hidden-sm visible-l">
+              <ul class="nav-buttons">
+                
+                <li><a href="#" class="button button-s  "><span class=""></span>Button<span class=""></span></a></li>
+                
+                <li><a href="#" class="button button-s button-ghost button-icon-right"><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
+                
+              </ul> 
+            </li>
+            <li>
+              <ul class="search-toggle-navigation">
+                <li class="search">
+                  <a href="#" class="icon icon-search"></a>
+                </li>
+                <li class="toggle-navigation visible-xs visible-m hidden-l">
+                  <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
+                </li>  
+              </ul>
+            </li>    
+          </ul>  
+        </nav>
+      </div>
+    </section>
+    <section>
+      <div class="full-width">
+        <h2>Header Background</h2>
+      </div>
+      <!-- Header Background-->
+      <header class="header-background">
+        <div class="boxed-width header-content">
+          <div class="header-text">
+            
+            <h1 class="h-xxl">Dignissim inceptos odio morbi tristique primis mauris</h1>
+            <p class="p-base">platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus.</p>
+            
+          </div>  
+          <ul class="header-buttons">
+            
+            <li><a href="#" class="button button-l  "><span class=""></span>Button<span class=""></span></a></li>
+            
+            <li><a href="#" class="button button-l button-ghost button-icon-right"><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
+            
+          </ul>  
+        </div>
+      </header>
+    </section>
+    <section>
+      <div class="full-width">
+        <h2>Header Two Columns</h2>
+      </div>
+      <!-- Header Two Columns -->
+      <header class="header-two-columns full-width">
+        <!-- Slideshow -->
+        <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true" loading="lazy">
+          <div class="slideshow-content" tabindex="-1">
+            <div class="uk-slideshow-items">
+              <div>
+                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
+              </div>
+              <div>
+                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
+              </div>
+            </div>
+            <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+            <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+            <ul class="uk-slideshow-nav uk-dotnav"></ul>
+          </div>  
+        </div> 
+        <!-- Text  -->
+        <div class="header-two-columns-content">
+          <div class="header-text">
+            
+            <h1 class="h-xxl">Dignissim inceptos odio morbi tristique primis mauris</h1>
+            <p class="p-base">platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus.</p>
+            
+          </div>  
+          <ul class="header-buttons">
+            
+            <li><a href="#" class="button button-l  "><span class=""></span>Button<span class=""></span></a></li>
+            
+            <li><a href="#" class="button button-l button-ghost button-icon-right"><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
+            
+          </ul>
+        </div>
+      </header>  
+    </section>  
   </main>
   <footer>
 </footer>  
