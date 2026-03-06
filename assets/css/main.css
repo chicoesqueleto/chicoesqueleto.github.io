@@ -427,6 +427,8 @@ ul, li{
 
 /* Components */
 
+/* Nav */
+
 .nav-container{
   background-color: var(--neutral-10);
   padding: 1rem 0;
@@ -473,12 +475,12 @@ nav a:hover{
 }
 
 .nav-links, .nav-social, .nav-buttons{
-  margin-right: 1.5rem;
+  margin-right: 1.25rem;
 }
 
 .nav-links{
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .nav-links a::after{
