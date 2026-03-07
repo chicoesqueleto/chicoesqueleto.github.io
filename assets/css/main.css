@@ -320,7 +320,7 @@ button, .button{
   margin: 0;
   cursor: pointer;
   transition: var(--fade);
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -421,13 +421,6 @@ li:has(button), li:has(.button){
 
 .link-xl{
   font-size: var(--p-xl);
-}
-
-/* Lists */
-
-ul, li{
-  padding: 0;
-  margin: 0;
 }
 
 /* Components */
@@ -546,7 +539,8 @@ nav a{
 .search,
 .modal-nav-logo a,
 .modal-nav-platforms li, 
-.modal-nav-platforms a{
+.modal-nav-platforms a,
+.toggle-navigation{
   display: inline-block;
   line-height: 0;
 }
@@ -554,6 +548,11 @@ nav a{
 nav a:hover{
   color: var(--neutral-70);
   background-color: inherit;
+}
+
+nav ul, nav ol, nav li{
+  padding: 0;
+  margin: 0;
 }
 
 .nav-logo a{
@@ -630,13 +629,20 @@ nav a:hover{
   padding: 1rem 0;
 }
 
+.modal-nav-content ul,
+.modal-nav-content li, 
+.modal-nav-content ol{
+  padding: 0;
+  margin: 0;
+}
+
 .modal-nav-content a:not(.button){
   border-bottom: none;
   color: var(--text);
 }
 
 .modal-nav-logo{
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .modal-nav-logo a{
@@ -644,7 +650,7 @@ nav a:hover{
 }
 
 .modal-nav-links, .modal-nav-platforms{
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .modal-nav-close{
@@ -686,7 +692,7 @@ nav a:hover{
 
 /* Headers */
 
-/* Header background */
+/* Header Background */
 
 .header-background{
   background-color: var(--neutral-20);
@@ -700,7 +706,8 @@ nav a:hover{
 }
 
 .header-background .header-text,
-.header-two-columns .header-text{
+.header-two-columns-01 .header-text,
+.header-two-columns-02 .header-text{
   margin-bottom: 2rem;
 }
 
@@ -708,22 +715,34 @@ nav a:hover{
   max-width: 696px;
 }
 
-.header-two-columns .header-text{
+.header-background .header-text p{
+  max-width: 592px;
+}
+
+/* Header Two Columns */
+
+.header-two-columns-01, .header-two-columns-02{
+  padding-bottom: 3rem;
+}
+
+.header-two-columns-02{
+  padding-top: 3rem;
+}
+
+.header-two-columns-01 .header-text{
   /*max-width: 592px;*/
 }
 
 .header-background .header-text h1,
-.header-two-columns .header-text h1{
+.header-two-columns-01 .header-text h1,
+.header-two-columns-02 .header-text h1{
   margin-bottom: 1rem;
 }
 
 .header-background .header-text p,
-.header-two-columns .header-text p{
+.header-two-columns-01 .header-text p,
+.header-two-columns-02 .header-text h1{
   margin-bottom: 1rem;
-}
-
-.header-background .header-text p{
-  max-width: 592px;
 }
 
 .header-buttons{
@@ -731,18 +750,43 @@ nav a:hover{
   gap: 1rem;
 }
 
+.header-buttons{
+  padding: 0;
+}
+
 /* Header two columns */
 
-.header-two-columns{
+.header-two-columns-01, .header-two-columns-02{
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
 }
 
+/* Containers */
+
+.containers-container, .cards-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+}
+
+.container figure, .card figure{
+  margin-bottom: 1rem;
+}
+
+.container .container-heading, .card .card-heading{
+  margin-bottom: .5rem;
+}
+
+.container .container-text, .card .card-text{
+  margin-bottom: 1.5rem;
+}
+
 /* Posts */
 
-.basic-styles-and-component{
+.basic-styles-and-components{
   background-color: var(--neutral-0);
 }
 
@@ -882,6 +926,7 @@ main{
 /* Components post */
 
 .nav-container,
-.header-background{
+.header-background,
+.header-two-columns-01{
   margin-bottom: 3rem;
 }

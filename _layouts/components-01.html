@@ -33,7 +33,7 @@
             <li>
               <ul class="nav-platforms">
                 {% for item in site.data.platform-links %}
-                <li><a href="{{ item.url }}" target="{{ item.target }}"><span class="icon icon-{{ item.platform }}"></span></a></li>
+                <li><a href="{{ item.url }}" target="{{ item.target }}" aria-label="{{ item.aria-label }}"><span class="icon icon-{{ item.platform }}"></span></a></li>
                 {% endfor %}
               </ul>  
             </li>
@@ -46,12 +46,16 @@
             </li>
             <li>
               <ul class="search-toggle-navigation">
+                {% for item in site.data.search-button %}
                 <li class="search">
-                  <a href="#" class="icon icon-search"></a>
+                  <a href="#" class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></a>
                 </li>
+                {% endfor %}
+                {% for item in site.data.navigation-button %}
                 <li class="toggle-navigation visible-xs visible-m hidden-l">
-                  <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
-                </li>  
+                  <a href="#modal-nav" uk-toggle class="icon {{ item.icon }}" aria-label="{{ item.aria-label }}"></a>
+                </li>
+                {% endfor %}  
               </ul>
             </li>    
           </ul>  
@@ -60,7 +64,7 @@
     </section>
     <section>
       <div class="full-width">
-        <h2>{{ page.header-backgrond-heading }}</h2>
+        <h2>{{ page.header-background-heading }}</h2>
       </div>
       <!-- Header Background-->
       <header class="header-background">
@@ -81,20 +85,28 @@
     </section>
     <section>
       <div class="full-width">
-        <h2>Header Two Columns</h2>
+        <h2>{{ page.header-two-columns-01-heading }}</h2>
       </div>
-      <!-- Header Two Columns -->
-      <header class="header-two-columns full-width">
+      <!-- Header Two Columns 01-->
+      <header class="header-two-columns-01 full-width">
         <!-- Slideshow -->
         <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
           <div class="slideshow-content" tabindex="-1">
             <div class="uk-slideshow-items">
-              <div>
-                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
-              </div>
-              <div>
-                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
-              </div>
+              {% for item in site.data.header-two-columns-01-slideshow-images %}
+              <img 
+                srcset="
+                  {{ item.image-xs }} 750w,
+                  {{ item.image-sm }} 696w,
+                  {{ item.image-lg }} 1048w"
+                sizes="
+                  (min-width: 1025px) 704px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="{{ item.src }}"  
+                alt="{{ item.alt }}"
+                loading="lazy" uk-cover>
+              {% endfor %}
             </div>
             <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
             <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
@@ -111,12 +123,58 @@
           </div>  
           <ul class="header-buttons">
             {% for item in site.data.header-buttons %}
-            <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
+            <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}" ><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
             {% endfor %}
           </ul>
         </div>
       </header>  
     </section>
+      <div class="full-width">
+        <h2>{{ page.header-two-columns-02-heading }}</h2>
+      </div>
+      <!-- Header Two Columns 02 -->
+      <header class="header-two-columns-02 boxed-width">
+        <!-- Text  -->
+        <div class="header-content">
+          <div class="header-text">
+            {% for item in site.data.header-texts %}
+            <h1 class="h-xxl">{{ item.heading }}</h1>
+            <p class="p-base">{{ item.text }}</p>
+            {% endfor %}
+          </div>  
+          <ul class="header-buttons">
+            {% for item in site.data.header-buttons %}
+            <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}" ><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        <!-- Slideshow -->
+        <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
+          <div class="slideshow-content" tabindex="-1">
+            <div class="uk-slideshow-items">
+              {% for item in site.data.header-two-columns-02-slideshow-images %}
+              <img 
+                srcset="
+                  {{ item.image-xs }} 750w,
+                  {{ item.image-sm }} 696w,
+                  {{ item.image-lg }} 976w"
+                sizes="
+                  (min-width: 1025px) 488px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="{{ item.src }}"  
+                alt="{{ item.alt }}"
+                loading="lazy" uk-cover>
+              {% endfor %}
+            </div>
+            <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+            <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+            <ul class="uk-slideshow-nav uk-dotnav"></ul>
+          </div>  
+        </div> 
+      </header>  
+    <section>
+    </section>  
   </main>
   {% include basic-styles-and-components-footer.html %}   
 <body> 

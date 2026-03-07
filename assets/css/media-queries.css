@@ -14,11 +14,26 @@
   }
   /* Components */
   /*Header Two Columns*/
-  .header-two-columns{
+  .header-two-columns-01, .header-two-columns-02{
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 0 !important;
     gap: 1.5rem;
     align-items: start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .header-two-columns-01{
+    padding-left: 0 !important;
+  }
+  /* Containers */
+  .containers-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-horizontal{
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: center;
   }
   /* Typography styles post */
   main .paragraphs-container{
@@ -79,10 +94,38 @@
     padding-right: 2rem;
   }
   /*Components*/
+  /* Containers */
+  .containers-container{
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .containers-container .container-horizontal:nth-child(even){
+    grid-column: 3 / 5;
+  }
+  .container-horizontal{
+    gap: 2rem;
+  }
+  .container-horizontal figure, .card-horizontal figure{
+    margin-bottom: 0;
+  }
   /*Header Two Columns*/
-  .header-two-columns{
+  .header-two-columns-01, .header-two-columns-02{
     gap: 2rem;
     align-items: center;
+  }
+  .header-two-columns-01{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .header-two-columns-02{
+    grid-template-columns: repeat(12, 1fr);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .header-two-columns-02 .header-content{
+    grid-column: 1 / 8;
+  }
+  .header-two-columns-02 .slideshow{
+    grid-column: 8 / 13;
   }
   /* Typography styles post */
   .headings-container, .paragraphs-container{

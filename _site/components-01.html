@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Basic styles and components | 03 Components</title>
+  <title>Basic styles and components | 03 Components 01</title>
   <!-- Uikit CSS -->
   <link rel="stylesheet" href="/assets/css/uikit/uikit.min.css" media="print" onload="this.media='all'">
   <!-- Icomoon -->
@@ -13,22 +13,22 @@
   <link rel="stylesheet" href="/assets/css/media-queries.css">
   <!-- Jekyll SEO -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>03 Components | Basic styles and components</title>
+<title>03 Components 01 | Basic styles and components</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="03 Components" />
+<meta property="og:title" content="03 Components 01" />
 <meta name="author" content="Fluorescente" />
 <meta property="og:locale" content="en" />
 <meta name="description" content="Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit." />
 <meta property="og:description" content="Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit." />
-<link rel="canonical" href="http://localhost:4000/components" />
-<meta property="og:url" content="http://localhost:4000/components" />
+<link rel="canonical" href="http://localhost:4000/components-01" />
+<meta property="og:url" content="http://localhost:4000/components-01" />
 <meta property="og:site_name" content="Basic styles and components" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-02-12T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="03 Components" />
+<meta property="twitter:title" content="03 Components 01" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Fluorescente"},"dateModified":"2026-02-12T00:00:00-05:00","datePublished":"2026-02-12T00:00:00-05:00","description":"Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit.","headline":"03 Components","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/components"},"url":"http://localhost:4000/components"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Fluorescente"},"dateModified":"2026-02-12T00:00:00-05:00","datePublished":"2026-02-12T00:00:00-05:00","description":"Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit.","headline":"03 Components 01","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/components-01"},"url":"http://localhost:4000/components-01"}</script>
 <!-- End Jekyll SEO tag -->
 
   <!-- Noscript fallback -->
@@ -40,7 +40,7 @@
 </html>
 <body>
   <header class="full-width ux-library-header">
-    <h1 class="h-xxl">03 Components
+    <h1 class="h-xxl">03 Components 01
 </h1>
   </header>
   <main>
@@ -78,11 +78,11 @@
             <li>
               <ul class="nav-platforms">
                 
-                <li><a href="#" target="_blank"><span class="icon icon-weibo"></span></a></li>
+                <li><a href="#" target="_blank" aria-label="Weibo"><span class="icon icon-weibo"></span></a></li>
                 
-                <li><a href="#" target="_blank"><span class="icon icon-xiao-hong-shu"></span></a></li>
+                <li><a href="#" target="_blank" aria-label="Xiao Hong Shu"><span class="icon icon-xiao-hong-shu"></span></a></li>
                 
-                <li><a href="#" target="_blank"><span class="icon icon-wechat"></span></a></li>
+                <li><a href="#" target="_blank" aria-label="Wechat"><span class="icon icon-wechat"></span></a></li>
                 
               </ul>  
             </li>
@@ -97,12 +97,16 @@
             </li>
             <li>
               <ul class="search-toggle-navigation">
+                
                 <li class="search">
-                  <a href="#" class="icon icon-search"></a>
+                  <a href="#" class="icon icon-search" aria-label="search button"></a>
                 </li>
+                
+                
                 <li class="toggle-navigation visible-xs visible-m hidden-l">
-                  <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two"></a>
-                </li>  
+                  <a href="#modal-nav" uk-toggle class="icon icon-hamburger-two" aria-label="Navigation button"></a>
+                </li>
+                  
               </ul>
             </li>    
           </ul>  
@@ -134,20 +138,41 @@
     </section>
     <section>
       <div class="full-width">
-        <h2>Header Two Columns</h2>
+        <h2>Header Two Columns 01</h2>
       </div>
-      <!-- Header Two Columns -->
-      <header class="header-two-columns full-width">
+      <!-- Header Two Columns 01-->
+      <header class="header-two-columns-01 full-width">
         <!-- Slideshow -->
         <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
           <div class="slideshow-content" tabindex="-1">
             <div class="uk-slideshow-items">
-              <div>
-                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
-              </div>
-              <div>
-                <img src="assets/images/placeholder-images/images-1-1.svg" uk-cover>
-              </div>
+              
+              <img 
+                srcset="
+                  /assets/images/placeholder-images/images-1-1.svg 750w,
+                  /assets/images/placeholder-images/images-1-1.svg 696w,
+                  /assets/images/placeholder-images/images-1-1.svg 1048w"
+                sizes="
+                  (min-width: 1025px) 704px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="/assets/images/placeholder-images/images-1-1.svg"  
+                alt="Placeholder image with 1:1 aspect ratio 01"
+                loading="lazy" uk-cover>
+              
+              <img 
+                srcset="
+                  /assets/images/placeholder-images/images-1-1.svg 750w,
+                  /assets/images/placeholder-images/images-1-1.svg 696w,
+                  /assets/images/placeholder-images/images-1-1.svg 1048w"
+                sizes="
+                  (min-width: 1025px) 704px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="/assets/images/placeholder-images/images-1-1.svg"  
+                alt="Placeholder image with 1:1 aspect ratio 02"
+                loading="lazy" uk-cover>
+              
             </div>
             <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
             <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
@@ -164,14 +189,75 @@
           </div>  
           <ul class="header-buttons">
             
-            <li><a href="#" class="button button-l  "><span class=""></span>Button<span class=""></span></a></li>
+            <li><a href="#" class="button button-l  " ><span class=""></span>Button<span class=""></span></a></li>
             
-            <li><a href="#" class="button button-l button-ghost button-icon-right"><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
+            <li><a href="#" class="button button-l button-ghost button-icon-right" ><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
             
           </ul>
         </div>
       </header>  
     </section>
+      <div class="full-width">
+        <h2>Header Two Columns 02</h2>
+      </div>
+      <!-- Header Two Columns 02 -->
+      <header class="header-two-columns-02 boxed-width">
+        <!-- Text  -->
+        <div class="header-content">
+          <div class="header-text">
+            
+            <h1 class="h-xxl">Dignissim inceptos odio morbi tristique primis mauris</h1>
+            <p class="p-base">platea sit eu id nisi litora libero. Neque vulputate consequat ac amet augue blandit maximus aliquet congue. Pharetra vestibulum posuere ornare faucibus fusce dictumst orci aenean eu facilisis ut volutpat commodo senectus purus.</p>
+            
+          </div>  
+          <ul class="header-buttons">
+            
+            <li><a href="#" class="button button-l  " ><span class=""></span>Button<span class=""></span></a></li>
+            
+            <li><a href="#" class="button button-l button-ghost button-icon-right" ><span class=""></span>Button<span class="icon icon-heart-fill"></span></a></li>
+            
+          </ul>
+        </div>
+        <!-- Slideshow -->
+        <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
+          <div class="slideshow-content" tabindex="-1">
+            <div class="uk-slideshow-items">
+              
+              <img 
+                srcset="
+                  /assets/images/placeholder-images/images-1-1.svg 750w,
+                  /assets/images/placeholder-images/images-1-1.svg 696w,
+                  /assets/images/placeholder-images/images-1-1.svg 976w"
+                sizes="
+                  (min-width: 1025px) 488px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="/assets/images/placeholder-images/images-1-1.svg"  
+                alt="Placeholder image with 1:1 aspect ratio"
+                loading="lazy" uk-cover>
+              
+              <img 
+                srcset="
+                  /assets/images/placeholder-images/images-1-1.svg 750w,
+                  /assets/images/placeholder-images/images-1-1.svg 696w,
+                  /assets/images/placeholder-images/images-1-1.svg 976w"
+                sizes="
+                  (min-width: 1025px) 488px,
+                  (min-width: 641px) 348px,
+                  375px"
+                src="/assets/images/placeholder-images/images-1-1.svg"  
+                alt="Placeholder image with 1:1 aspect ratio"
+                loading="lazy" uk-cover>
+              
+            </div>
+            <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+            <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+            <ul class="uk-slideshow-nav uk-dotnav"></ul>
+          </div>  
+        </div> 
+      </header>  
+    <section>
+    </section>  
   </main>
   <footer>
 </footer>  

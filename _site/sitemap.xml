@@ -9,8 +9,12 @@
 <lastmod>2026-02-11T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/components</loc>
+<loc>http://localhost:4000/components-01</loc>
 <lastmod>2026-02-12T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/components-02</loc>
+<lastmod>2026-02-13T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/typography-bold-paragraph-styles/2026-02-10-bold-paragraph-xs.html</loc>
