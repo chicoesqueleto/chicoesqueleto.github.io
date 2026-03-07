@@ -729,23 +729,6 @@ nav a:hover{
 .header-buttons{
   display: flex;
   gap: 1rem;
-  align-items: ;
-}
-
-/* Header slideshow */
-
-.header-slideshow{
-  background-color: transparent;
-  display: block;
-}
-
-.background-slideshow{
-  position: relative;
-}
-
-.header-slideshow-content{
-  position: relative;
-  z-index: 1;
 }
 
 /* Header two columns */
