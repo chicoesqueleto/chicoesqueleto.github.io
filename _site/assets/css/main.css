@@ -732,6 +732,22 @@ nav a:hover{
   align-items: ;
 }
 
+/* Header slideshow */
+
+.header-slideshow{
+  background-color: transparent;
+  display: block;
+}
+
+.background-slideshow{
+  position: relative;
+}
+
+.header-slideshow-content{
+  position: relative;
+  z-index: 1;
+}
+
 /* Header two columns */
 
 .header-two-columns{
