@@ -768,8 +768,9 @@ nav ul, nav ol, nav li{
 .containers-container, .cards-container{
   display: grid;
   grid-template-columns: 1fr;
+  align-items: start;
   row-gap: 2rem;
-  column-gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .container figure, .card figure{
@@ -780,8 +781,20 @@ nav ul, nav ol, nav li{
   margin-bottom: .5rem;
 }
 
-.container .container-text, .card .card-text{
+.container .container-text{
   margin-bottom: 1.5rem;
+}
+
+.card{
+  background-color: var(--neutral-10);
+}
+
+.card-text p{
+  margin-bottom: 0;
+}
+
+.card-text{
+  padding: 0 1.5rem 2rem 1.5rem;
 }
 
 /* Posts */

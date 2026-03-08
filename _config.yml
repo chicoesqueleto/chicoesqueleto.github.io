@@ -44,7 +44,9 @@ collections:
   typography-paragraph-styles:
     output: true
   typography-bold-paragraph-styles:
-    output: true           
+    output: true
+  placeholder-posts:
+    output: true               
   styles-and-components:
     output: true        
 
