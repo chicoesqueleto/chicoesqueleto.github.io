@@ -20,7 +20,7 @@
             {% endfor %}
           </ul>
           <ul class="links-social-buttons-search">
-            <li class="hidden-xs visible-sm visible-l">
+            <li class="hidden-xs visible-sm visible-lg">
               <ul class="nav-links">
               <!-- Links Data -->
               {% for item in site.data.main-nav-links %}
@@ -37,7 +37,7 @@
                 {% endfor %}
               </ul>  
             </li>
-            <li class="hidden-xs hidden-sm visible-l">
+            <li class="hidden-xs hidden-sm visible-lg">
               <ul class="nav-buttons">
                 {% for item in site.data.main-nav-buttons %}
                 <li><a href="{{ item.url }}" class="button {{ item.button-size }} {{ item.button-type }} {{ item.button-icon-position }}"><span class="{{ item.button-icon-left }}"></span>{{ item.button-text }}<span class="{{ item.button-icon-right }}"></span></a></li>
@@ -90,7 +90,7 @@
       <!-- Header Two Columns 01-->
       <header class="header-two-columns-01 full-width">
         <!-- Slideshow -->
-        <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
+        <div uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
           <div class="slideshow-content" tabindex="-1">
             <div class="uk-slideshow-items">
               {% for item in site.data.header-two-columns-01-slideshow-images %}
@@ -129,6 +129,7 @@
         </div>
       </header>  
     </section>
+    <section>
       <div class="full-width">
         <h2>{{ page.header-two-columns-02-heading }}</h2>
       </div>
@@ -149,7 +150,7 @@
           </ul>
         </div>
         <!-- Slideshow -->
-        <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true">
+        <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
           <div class="slideshow-content" tabindex="-1">
             <div class="uk-slideshow-items">
               {% for item in site.data.header-two-columns-02-slideshow-images %}
@@ -173,7 +174,6 @@
           </div>  
         </div> 
       </header>  
-    <section>
     </section>  
   </main>
   {% include basic-styles-and-components-footer.html %}   

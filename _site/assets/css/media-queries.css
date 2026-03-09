@@ -95,10 +95,10 @@
     --h-xxl: 3.25rem;
   }
   /* Display Hidden */
-  .hidden-l{
+  .hidden-lg{
     display: none;
   }
-  .visible-l{
+  .visible-lg{
     display: inherit;
   }
   .full-width{

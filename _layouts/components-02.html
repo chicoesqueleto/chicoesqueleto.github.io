@@ -9,9 +9,9 @@
   <main>
     <section>
       <div class="full-width">
-        <h2>{{ page.container-heading }}</h2>
+        <h2>{{ page.containers-heading }}</h2>
       </div>
-      <!-- Containers Horizontal -->
+      <!-- Containers -->
       <div class="boxed-width">
         <div class="containers-container">
 
@@ -35,8 +35,8 @@
               </figure>
               <div class="text-buttons">
                 <div class="container-text">
-                  <h1 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-                  <p class="p-base">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
                 <a href="{{ placeholder-post.permalink }}" class="button button-base">{{ placeholder-post.button-text }}</a>
               </div>
@@ -64,8 +64,8 @@
               </figure>
               <div class="text-buttons">
                 <div class="container-text">
-                  <h1 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-                  <p class="p-base">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
                 <a href="{{ placeholder-post.permalink }}" class="button button-base">{{ placeholder-post.button-text }}</a>
               </div>
@@ -76,9 +76,9 @@
       </div>
 
       <div class="full-width">
-        <h2>{{ page.card-heading }}</h2>
+        <h2>{{ page.cards-heading }}</h2>
       </div>
-      <!-- Cards Horizotal -->
+      <!-- Cards -->
       <div class="boxed-width">
         <div class="cards-container">
 
@@ -101,8 +101,8 @@
                     loading="lazy">
                 </figure>
                 <div class="card-text">
-                  <h1 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-                  <p class="p-base">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
               </a>
             {% endif %}
@@ -111,7 +111,7 @@
           <!-- Cards Vertical -->
           {% for placeholder-post in site.placeholder-posts %}
             {% if placeholder-post.tags contains 'vertical' %}
-            <div class="card">
+            <a href="{{ placeholder-post.permalink }}" class="card">
               <figure>
                 <img 
                   srcset="
@@ -127,14 +127,85 @@
                   loading="lazy">
               </figure>
               <div class="card-text">
-                <h1 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-                <p class="p-base">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                <h3 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
               </div>
-            </div>
+            </a>
             {% endif %}
           {% endfor %}
         </div>
       </div>
+    </section>
+    <section>
+      <div class="full-width">
+        <h2>{{ page.slideshow-heading }}</h2>
+      </div>
+
+        <div class="boxed-width visible-xs hidden-sm hidden-lg">
+          <!-- Slideshow -->
+          <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
+            <div class="slideshow-content" tabindex="-1">
+              <div class="uk-slideshow-items">
+                {% for item in site.data.slideshows-images %}
+                <img 
+                  srcset="
+                    {{ item.image-xs }} 654w"
+                  sizes="327px"
+                  src="{{ item.image-xs }}"  
+                  alt="{{ item.alt }}"
+                  loading="lazy" uk-cover>
+                {% endfor %}
+              </div>
+              <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+              <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+              <ul class="uk-slideshow-nav uk-dotnav"></ul>
+            </div>  
+          </div>
+        </div>
+
+        <div class="boxed-width hidden-xs visible-sm hidden-lg">
+          <!-- Slideshow -->
+          <div class="slideshow" uk-slideshow="ratio: 5:4; animation:push; autoplay:true; autoplay-interval: 4000">
+            <div class="slideshow-content" tabindex="-1">
+              <div class="uk-slideshow-items">
+                {% for item in site.data.slideshows-images %}
+                <img 
+                  srcset="
+                    {{ item.image-sm }} 1440w"
+                  sizes="720px"
+                  src="{{ item.image-xs }}"  
+                  alt="{{ item.alt }}"
+                  loading="lazy" uk-cover>
+                {% endfor %}
+              </div>
+              <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+              <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+              <ul class="uk-slideshow-nav uk-dotnav"></ul>
+            </div>  
+          </div>
+        </div>
+
+        <div class="boxed-width hidden-xs hidden-sm visible-lg">
+          <!-- Slideshow -->
+          <div class="slideshow" uk-slideshow="ratio: 16:9; animation:push; autoplay:true; autoplay-interval: 4000">
+            <div class="slideshow-content" tabindex="-1">
+              <div class="uk-slideshow-items">
+                {% for item in site.data.slideshows-images %}
+                <img 
+                  srcset="
+                    {{ item.image-lg }} 1942w"
+                  sizes="971px"
+                  src="{{ item.image-lg }}"  
+                  alt="{{ item.alt }}"
+                  loading="lazy" uk-cover>
+                {% endfor %}
+              </div>
+              <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
+              <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
+              <ul class="uk-slideshow-nav uk-dotnav"></ul>
+            </div>  
+          </div>
+        </div>        
 
     </section> 
   </main>

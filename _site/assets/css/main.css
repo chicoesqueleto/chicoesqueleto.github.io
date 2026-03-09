@@ -781,12 +781,27 @@ nav ul, nav ol, nav li{
   margin-bottom: .5rem;
 }
 
-.container .container-text{
+.container-text{
   margin-bottom: 1.5rem;
+}
+
+.container-text h3, .card-text h3{
+  font-size: var(--h2);
 }
 
 .card{
   background-color: var(--neutral-10);
+  border-bottom: none;
+  color: var(--text);
+}
+
+.card:hover{
+  color: var(--neutral-80);
+  background-color: var(--bright);
+}
+
+.card:hover h3{
+  color: var(--neutral-80);
 }
 
 .card-text p{
@@ -940,6 +955,8 @@ main{
 
 .nav-container,
 .header-background,
-.header-two-columns-01{
-  margin-bottom: 3rem;
+.header-two-columns-01,
+.containers-container,
+.cards-container{
+  margin-bottom: 3rem !important;
 }
