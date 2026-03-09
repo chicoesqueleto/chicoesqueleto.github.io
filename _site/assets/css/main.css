@@ -510,22 +510,22 @@ li:has(button), li:has(.button){
   padding: 1rem 0;
 }
 
-nav{
+.nav-container nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav ul{
+.nav-container nav ul{
   display: flex;
   align-items: center;
 }
 
-nav li, .modal-nav-content li{
+.nav-container nav li, .modal-nav-content li{
  list-style: none;
 }
 
-nav a{
+.nav-container nav a{
   font-weight: var(--bold);
   border-bottom: none;
   color: var(--text);
@@ -763,6 +763,58 @@ nav ul, nav ol, nav li{
   align-items: center;
 }
 
+/* Paginator */
+
+.paginator{
+  display: flex;
+  justify-content: center;
+}
+
+.paginator ul{
+  display: flex;
+  font-weight: var(--bold);
+  font-size: var(--base);
+  align-items: center;
+}
+
+.paginator li{
+  list-style: none;
+}
+
+.paginator a{
+  border-bottom: none;
+  padding: 1rem 1.5rem;
+  color: var(--text);
+  border-bottom: 1px solid transparent;
+}
+
+.paginator a:hover{
+  border-bottom: 1px solid var(--text);
+  background-color: var(--neutral-10);
+}
+
+.paginator-first, 
+.paginator-last,
+.paginator-prev,
+.paginator-next{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.paginator-first:hover, 
+.paginator-last:hover,
+.paginator-prev:hover,
+.paginator-next:hover{
+  border-bottom: 1px solid transparent !important;
+}
+
+.paginator-prev,
+.paginator-next{
+  height: inherit;
+}
+
+
 /* Containers */
 
 .containers-container, .cards-container{
@@ -957,6 +1009,12 @@ main{
 .header-background,
 .header-two-columns-01,
 .containers-container,
-.cards-container{
+.cards-container,
+.slideshow-container,
+.paginator-container{
   margin-bottom: 3rem !important;
+}
+
+.paginator-container{
+  margin: 0 auto 3rem auto;
 }
