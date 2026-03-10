@@ -220,19 +220,24 @@
 
         <nav class="paginator">
           <ul>
-            <li><a href="#" class="paginator-first"><span class="icon icon-arrow-left"></span> First</a></li>
-            <li><a href="#" class="paginator-prev"><span class="icon icon-arrow-left"></span></a></li>
+            <li>
+              <a href="{{ page.posts | first.url }}" class="paginator-first"><span class="icon icon-arrow-left"></span> First</a>
+            </li>
+            <li>
+              {% if page.previous.url %}
+              <a href="{{ page.previous.url }}" class="paginator-prev"><span class="icon icon-arrow-left"></span></a>
+              {% endif %}
+            </li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
             <li><a href="#">4</a></li>
             <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
             <li><a href="#" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>
             <li><a href="#" class="paginator-last">Last <span class="icon icon-arrow-right"></span></a></li>
           </ul>
         <nav> 
-         
+
       </div>  
 
     </section> 
