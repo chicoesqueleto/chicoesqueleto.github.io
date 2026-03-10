@@ -173,7 +173,35 @@
             <ul class="uk-slideshow-nav uk-dotnav"></ul>
           </div>  
         </div> 
-      </header>  
+      </header>
+      <div class="boxed-width paginator-container">
+
+        <nav class="paginator">
+          <ul>
+            {% if page.url != site.styles-and-components.first.permalink %}
+            <li>
+              <a href="{{ site.styles-and-components.first.permalink }}" class="paginator-first"><span class="icon icon-arrow-left"></span> First</a>
+            </li>
+            {% endif %}
+            {% if page.previous.url %}
+            <li>
+            <a href="{{ page.previous.url }}" class="paginator-prev"><span class="icon icon-arrow-left"></span></a>
+            </li>
+            {% endif %}
+            {% for styles-and-component in site.styles-and-components %}
+            <li><a class="{% if page.url == styles-and-component.permalink %} paginator-active {% endif %}" href="{{ styles-and-component.permalink }}">{{ forloop.index }}</a></li>
+            {% endfor %}
+            {% if page.next.url %}
+            <li><a href="{{ page.next.url }}" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>
+            {% endif %}
+            {% if page.url != site.styles-and-components.last.permalink %}
+            <li><a href="{{ site.styles-and-components.last.permalink }}" class="paginator-last">Last <span class="icon icon-arrow-right"></span></a>
+            </li>
+            {% endif %}
+          </ul>
+        <nav>
+          
+      </div> 
     </section>
   </main>
   {% include basic-styles-and-components-footer.html %}   

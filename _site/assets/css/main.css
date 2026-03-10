@@ -788,8 +788,8 @@ nav ul, nav ol, nav li{
   border-bottom: 1px solid transparent;
 }
 
-.paginator a:hover{
-  border-bottom: 1px solid var(--text);
+.paginator a:hover, .paginator-active{
+  border-bottom: 1px solid var(--text) !important;
   background-color: var(--neutral-10);
 }
 
@@ -1008,6 +1008,7 @@ main{
 .header-background,
 .header-two-columns-01,
 .containers-container,
-.cards-container{
+.cards-container,
+.slideshow-content{
   margin-bottom: 3rem !important;
 }
