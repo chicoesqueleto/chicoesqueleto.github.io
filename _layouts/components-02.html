@@ -221,7 +221,7 @@
         <nav class="paginator">
           <ul>
             {% if page.url != site.styles-and-components.first.permalink %}
-            <li>
+            <li class="hidden-xs visible-sm">
               <a href="{{ site.styles-and-components.first.permalink }}" class="paginator-first"><span class="icon icon-arrow-left"></span> First</a>
             </li>
             {% endif %}
@@ -231,17 +231,17 @@
             </li>
             {% endif %}
             {% for styles-and-component in site.styles-and-components %}
-            <li><a class="{% if page.url == styles-and-component.permalink %} paginator-active {% endif %}" href="{{ styles-and-component.permalink }}">{{ forloop.index }}</a></li>
+            <li class="{% if page.url == page.next.url %}no{% endif%}"><a class="{% if page.url == styles-and-component.permalink %}paginator-active{% endif %}" href="{{ styles-and-component.permalink }}" {% if page.url == styles-and-component.permalink %}aria-current="page"{% endif %}>{{ forloop.index }}</a></li>
             {% endfor %}
             {% if page.next.url %}
             <li><a href="{{ page.next.url }}" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>
             {% endif %}
             {% if page.url != site.styles-and-components.last.permalink %}
-            <li><a href="{{ site.styles-and-components.last.permalink }}" class="paginator-last">Last <span class="icon icon-arrow-right"></span></a>
+            <li class="hidden-xs visible-sm"><a href="{{ site.styles-and-components.last.permalink }}" class="paginator-last">Last <span class="icon icon-arrow-right"></span></a>
             </li>
             {% endif %}
           </ul>
-        <nav>
+        </nav>
 
       </div>
     </section> 

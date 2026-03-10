@@ -789,8 +789,12 @@ nav ul, nav ol, nav li{
 }
 
 .paginator a:hover, .paginator-active{
-  border-bottom: 1px solid var(--text) !important;
+  border-bottom: 1px solid var(--text);
   background-color: var(--neutral-10);
+}
+
+.paginator-active{
+  border-bottom: 1px solid var(--text) !important;
 }
 
 .paginator-first, 
@@ -809,6 +813,8 @@ nav ul, nav ol, nav li{
   border-bottom: 1px solid transparent !important;
 }
 
+.paginator-first,
+.paginator-last,
 .paginator-prev,
 .paginator-next{
   height: 3.6rem;
