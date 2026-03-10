@@ -811,7 +811,7 @@ nav ul, nav ol, nav li{
 
 .paginator-prev,
 .paginator-next{
-  height: inherit;
+  height: 3.6rem;
 }
 
 
