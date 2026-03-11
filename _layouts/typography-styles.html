@@ -10,10 +10,10 @@
     <section>
       <h2>{{ page.headings-heading }}</h2>
       <div class="headings-container">
-      {% for typography-heading-style in site.typography-heading-styles %}
+      {% for item in site.typography-heading-styles %}
         <article>
-          <h3 class="article-heading">{{ typography-heading-style.heading }}</h3>
-          {{ typography-heading-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+          <h3 class="article-heading">{{ item.heading }}</h3>
+          {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }} 
         </article> 
       {% endfor %}
       </div>
@@ -21,18 +21,18 @@
     <section>  
       <h2>{{ page.paragraphs-heading }}</h2>
       <div class="paragraphs-container">
-        {% for typography-paragraph-style in site.typography-paragraph-styles %}
+        {% for item in site.typography-paragraph-styles %}
           <article>
-            <h3 class="article-heading">{{ typography-paragraph-style.heading }}</h3>
-            {{ typography-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+            <h3 class="article-heading">{{ item.heading }}</h3>
+            {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }} 
           </article> 
         {% endfor %}
       </div>
       <div class="paragraphs-container">  
-        {% for typography-bold-paragraph-style in site.typography-bold-paragraph-styles %}
+        {% for item in site.typography-bold-paragraph-styles %}
           <article>
-            <h3 class="article-heading">{{ typography-bold-paragraph-style.heading }}</h3>
-            {{ typography-bold-paragraph-style.content | markdownify | remove: '<p>' | remove: '</p>' }} 
+            <h3 class="article-heading">{{ item.heading }}</h3>
+            {{ item.content | markdownify | remove: '<p>' | remove: '</p>' }} 
           </article> 
         {% endfor %}
       </div>

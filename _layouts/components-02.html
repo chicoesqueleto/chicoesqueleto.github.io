@@ -16,58 +16,58 @@
         <div class="containers-container">
 
           <!-- Containers Horizontal -->
-          {% for placeholder-post in site.placeholder-posts %}
-            {% if placeholder-post.tags contains 'horizontal' %}
+          {% for item in site.placeholder-posts %}
+            {% if item.tags contains 'horizontal' %}
             <div class="container container-horizontal">
               <figure>
                 <img 
                   srcset="
-                    {{ placeholder-post.image-xs }} 654w,
-                    {{ placeholder-post.image-sm }} 704w,
-                    {{ placeholder-post.image-lg }} 560w"
+                    {{ item.image-xs }} 654w,
+                    {{ item.image-sm }} 704w,
+                    {{ item.image-lg }} 560w"
                   sizes="
                     (min-width: 1025px) 280px,
                     (min-width: 641px) 352px,
                     327px"
-                  src="{{ placeholder-post.src }}"  
-                  alt="{{ placeholder-post.thumbnail-alt }}"
+                  src="{{ item.src }}"  
+                  alt="{{ item.thumbnail-alt }}"
                   loading="lazy">
               </figure>
               <div class="text-buttons">
                 <div class="container-text">
-                  <h3 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
-                <a href="{{ placeholder-post.permalink }}" class="button button-base">{{ placeholder-post.button-text }}</a>
+                <a href="{{ item.permalink }}" class="button button-base">{{ item.button-text }}</a>
               </div>
             </div>
             {% endif %}
           {% endfor %}
 
           <!-- Containers Vertical -->
-          {% for placeholder-post in site.placeholder-posts %}
-            {% if placeholder-post.tags contains 'vertical' %}
+          {% for item in site.placeholder-posts %}
+            {% if item.tags contains 'vertical' %}
             <div class="container">
               <figure>
                 <img 
                   srcset="
-                    {{ placeholder-post.image-xs }} 654w,
-                    {{ placeholder-post.image-sm }} 704w,
-                    {{ placeholder-post.image-lg }} 560w"
+                    {{ item.image-xs }} 654w,
+                    {{ item.image-sm }} 704w,
+                    {{ item.image-lg }} 560w"
                   sizes="
                     (min-width: 1025px) 280px,
                     (min-width: 641px) 352px,
                     327px"
-                  src="{{ placeholder-post.src }}"  
-                  alt="{{ placeholder-post.thumbnail-alt }}"
+                  src="{{ item.src }}"  
+                  alt="{{ item.thumbnail-alt }}"
                   loading="lazy">
               </figure>
               <div class="text-buttons">
                 <div class="container-text">
-                  <h3 class="container-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
-                <a href="{{ placeholder-post.permalink }}" class="button button-base">{{ placeholder-post.button-text }}</a>
+                <a href="{{ item.permalink }}" class="button button-base">{{ item.button-text }}</a>
               </div>
             </div>
             {% endif %}
@@ -83,52 +83,52 @@
         <div class="cards-container">
 
           <!-- Cards Horizontal -->
-          {% for placeholder-post in site.placeholder-posts %}
-            {% if placeholder-post.tags contains 'horizontal' %}
-              <a href="{{ placeholder-post.permalink }}" class="card card-horizontal">
+          {% for item in site.placeholder-posts %}
+            {% if item.tags contains 'horizontal' %}
+              <a href="{{ item.permalink }}" class="card card-horizontal">
                 <figure>
                   <img 
                     srcset="
-                      {{ placeholder-post.image-xs }} 654w,
-                      {{ placeholder-post.image-sm }} 704w,
-                      {{ placeholder-post.image-lg }} 560w"
+                      {{ item.image-xs }} 654w,
+                      {{ item.image-sm }} 704w,
+                      {{ item.image-lg }} 560w"
                     sizes="
                       (min-width: 1025px) 280px,
                       (min-width: 641px) 352px,
                       327px"
-                    src="{{ placeholder-post.src }}"  
-                    alt="{{ placeholder-post.thumbnail-alt }}"
+                    src="{{ item.src }}"  
+                    alt="{{ item.thumbnail-alt }}"
                     loading="lazy">
                 </figure>
                 <div class="card-text">
-                  <h3 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                  <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                  <h3 class="card-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                  <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                 </div>
               </a>
             {% endif %}
           {% endfor %}
 
           <!-- Cards Vertical -->
-          {% for placeholder-post in site.placeholder-posts %}
+          {% for item in site.placeholder-posts %}
             {% if placeholder-post.tags contains 'vertical' %}
-            <a href="{{ placeholder-post.permalink }}" class="card">
+            <a href="{{ item.permalink }}" class="card">
               <figure>
                 <img 
                   srcset="
-                    {{ placeholder-post.image-xs }} 654w,
-                    {{ placeholder-post.image-sm }} 704w,
-                    {{ placeholder-post.image-lg }} 560w"
+                    {{ item.image-xs }} 654w,
+                    {{ item.image-sm }} 704w,
+                    {{ item.image-lg }} 560w"
                   sizes="
                     (min-width: 1025px) 280px,
                     (min-width: 641px) 352px,
                     327px"
-                  src="{{ placeholder-post.src }}"  
-                  alt="{{ placeholder-post.thumbnail-alt }}"
+                  src="{{ item.src }}"  
+                  alt="{{ item.thumbnail-alt }}"
                   loading="lazy">
               </figure>
               <div class="card-text">
-                <h3 class="card-heading">{{ placeholder-post.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                <p class="p-s">{{ placeholder-post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                <h3 class="card-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
+                <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
               </div>
             </a>
             {% endif %}
@@ -210,41 +210,33 @@
 
       </div>
     </section>
-
     <section>
       <div class="full-width">
-        <h2>{{ page.paginator-heading }}</h2>
+        <h2 id="{{ page.form-heading-id }}">{{ page.form-heading }}</h2>
       </div>
-
-      <div class="boxed-width paginator-container">
-
-        <nav class="paginator">
-          <ul>
-            {% if page.url != site.styles-and-components.first.permalink %}
-            <li>
-              <a href="{{ site.styles-and-components.first.permalink }}" class="paginator-first"><span class="icon icon-arrow-left hidden-xs visible-sm"></span> First</a>
-            </li>
-            {% endif %}
-            {% if page.previous.url %}
-            <li class="hidden-xs visible-sm">
-            <a href="{{ page.previous.url }}" class="paginator-prev"><span class="icon icon-arrow-left"></span></a>
-            </li>
-            {% endif %}
-            {% for styles-and-component in site.styles-and-components limit: 7 %}
-            <li class="{% if styles-and-component.permalink != page.previous.url and styles-and-component.permalink != page.next.url and styles-and-component.permalink != page.url %}hidden-xs visible-sm{% endif%}"><a class="{% if page.url == styles-and-component.permalink %}paginator-active{% endif %}" href="{{ styles-and-component.permalink }}" {% if page.url == styles-and-component.permalink %}aria-current="page"{% endif %}>{{ forloop.index }}</a></li>
-            {% endfor %}
-            {% if page.next.url %}
-            <li class="hidden-xs visible-sm"><a href="{{ page.next.url }}" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>
-            {% endif %}
-            {% if page.url != site.styles-and-components.last.permalink %}
-            <li><a href="{{ site.styles-and-components.last.permalink }}" class="paginator-last">Last <span class="icon icon-arrow-right hidden-xs visible-sm"></span></a>
-            </li>
-            {% endif %}
-          </ul>
-        </nav>
-
-      </div>
-    </section> 
+      <!-- Form -->
+      <div class="boxed-width">
+        <div class="form-container">
+          {% for item in site.data.form %}
+          <form method="post" action="{{ item.action }}" aria-labelledby="{{ item.form-labelledby }}">
+            <input type="hidden" name="_next" value="{{ item.confirmation-page }}">
+            <input type="hidden" name="_subject" value="{{ item.subject }}">
+            <input type="hidden" name="_cc" value="{{ item.cc }}">
+            <label for="name">{{ item.name-label }}</label>
+            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.name-validation }}')" oninput="this.setCustomValidity('')">
+            <label for="phone">{{ item.phone-label }}</label>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your phone number')" oninput="this.setCustomValidity('')">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your email')" oninput="this.setCustomValidity('')">
+            <label for="message">Message</label>
+            <textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Please write a message')" oninput="this.setCustomValidity('')"></textarea>
+            <button type="submit" class="button-base" aria-describedby="form-note">Send</button>
+            <p class="note" id="form-note">{{ page.form-note }}</p>
+          </form>
+          {% endfor %}
+        </div>
+      </div>  
+    </section>  
   </main>
   {% include basic-styles-and-components-footer.html %}   
 <body> 

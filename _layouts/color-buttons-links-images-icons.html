@@ -57,6 +57,17 @@
       </div>
     </section>
     <section>
+      <!-- Radiobuttons and Checkboxes -->
+      <h2>Radiobuttons and Checkboxes</h2>
+      <div class="buttons-container">
+        {% for item in site.data.checkboxes %}
+        <article>
+          <h3 class="p-xs">{{ item.heading }}</h3>   
+        </article>   
+        {% endfor %}
+      </div>  
+    </section>
+    <section>
       <!-- Images Data -->
       <h2>{{ page.images-heading }}</h2>
       <div class="images-container">

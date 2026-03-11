@@ -1,0 +1,8 @@
+- action: "#"
+  form-labelledby: "form-heading"
+  subject: "New Message :)"
+  cc: "#"
+  confirmation-page: "#"
+  name-label: "Name"
+  name-validation: "Please write your name"
+  phone-label: "Phone"

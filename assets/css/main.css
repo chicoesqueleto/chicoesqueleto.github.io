@@ -343,7 +343,7 @@ button:active, .button:active{
   color: var(--text);
 }
 
-a:focus, button:focus, .button:focus{
+a:focus, button:focus, .button:focus, input:focus, textarea:focus{
   outline: 2px dotted var(--text);
   outline-offset: 2px;
 }
@@ -777,7 +777,7 @@ nav ul, nav ol, nav li{
 .paginator ul{
   display: flex;
   font-weight: var(--bold);
-  font-size: var(--base);
+  font-size: var(--p-base);
   align-items: center;
 }
 
@@ -824,7 +824,7 @@ nav ul, nav ol, nav li{
   height: 3.6rem;
 }
 
-/* Containers */
+/* Containers, cards */
 
 .containers-container, .cards-container{
   display: grid;
@@ -871,6 +871,41 @@ nav ul, nav ol, nav li{
 
 .card-text{
   padding: 0 1.5rem 2rem 1.5rem;
+}
+
+/* Form */
+
+.form-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+label{
+  font-size: var(--p-base);
+  font-weight: var(--bold);
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input, textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .75rem;
+  font-family: var(--paragraphs);
+  font-size: var(--p-base);
+  color: var(--text);
+  border: 1px solid var(--neutral-30);
+  transition: var(--fade);
+}
+
+textarea{
+  margin-bottom: 1.5rem;
+}
+
+label:has(+ input:focus-visible), label:has(+ textarea:focus-visible) {
+  transition: var(--fade);
+  color: var(--neutral-60);
 }
 
 /* Posts */
@@ -1019,6 +1054,7 @@ main{
 .header-two-columns-01,
 .containers-container,
 .cards-container,
-.slideshow-content{
+.slideshow-content,
+.form-container{
   margin-bottom: 3rem !important;
 }

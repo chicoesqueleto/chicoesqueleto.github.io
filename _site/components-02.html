@@ -315,103 +315,11 @@
             
           
             
-            <a href="/article-03" class="card">
-              <figure>
-                <img 
-                  srcset="
-                    /assets/images/placeholder-images/images-5-4.svg 654w,
-                    /assets/images/placeholder-images/images-5-4.svg 704w,
-                    /assets/images/placeholder-images/images-5-4.svg 560w"
-                  sizes="
-                    (min-width: 1025px) 280px,
-                    (min-width: 641px) 352px,
-                    327px"
-                  src="/assets/images/placeholder-images/images-5-4.svg"  
-                  alt="Placeholder image with 1:1 aspect ratio"
-                  loading="lazy">
-              </figure>
-              <div class="card-text">
-                <h3 class="card-heading">Dignissim inceptos odio morbi tristique
-</h3>
-                <p class="p-s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-</p>
-              </div>
-            </a>
+          
             
           
             
-            <a href="/article-04" class="card">
-              <figure>
-                <img 
-                  srcset="
-                    /assets/images/placeholder-images/images-5-4.svg 654w,
-                    /assets/images/placeholder-images/images-5-4.svg 704w,
-                    /assets/images/placeholder-images/images-5-4.svg 560w"
-                  sizes="
-                    (min-width: 1025px) 280px,
-                    (min-width: 641px) 352px,
-                    327px"
-                  src="/assets/images/placeholder-images/images-5-4.svg"  
-                  alt="Placeholder image with 1:1 aspect ratio"
-                  loading="lazy">
-              </figure>
-              <div class="card-text">
-                <h3 class="card-heading">Dignissim inceptos odio morbi tristique
-</h3>
-                <p class="p-s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-</p>
-              </div>
-            </a>
-            
           
-            
-            <a href="/article-05" class="card">
-              <figure>
-                <img 
-                  srcset="
-                    /assets/images/placeholder-images/images-5-4.svg 654w,
-                    /assets/images/placeholder-images/images-5-4.svg 704w,
-                    /assets/images/placeholder-images/images-5-4.svg 560w"
-                  sizes="
-                    (min-width: 1025px) 280px,
-                    (min-width: 641px) 352px,
-                    327px"
-                  src="/assets/images/placeholder-images/images-5-4.svg"  
-                  alt="Placeholder image with 1:1 aspect ratio"
-                  loading="lazy">
-              </figure>
-              <div class="card-text">
-                <h3 class="card-heading">Dignissim inceptos odio morbi tristique
-</h3>
-                <p class="p-s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-</p>
-              </div>
-            </a>
-            
-          
-            
-            <a href="/article-06" class="card">
-              <figure>
-                <img 
-                  srcset="
-                    /assets/images/placeholder-images/images-5-4.svg 654w,
-                    /assets/images/placeholder-images/images-5-4.svg 704w,
-                    /assets/images/placeholder-images/images-5-4.svg 560w"
-                  sizes="
-                    (min-width: 1025px) 280px,
-                    (min-width: 641px) 352px,
-                    327px"
-                  src="/assets/images/placeholder-images/images-5-4.svg"  
-                  alt="Placeholder image with 1:1 aspect ratio"
-                  loading="lazy">
-              </figure>
-              <div class="card-text">
-                <h3 class="card-heading">Dignissim inceptos odio morbi tristique
-</h3>
-                <p class="p-s">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-</p>
-              </div>
-            </a>
             
           
         </div>
@@ -515,49 +423,33 @@
 
       </div>
     </section>
-
     <section>
       <div class="full-width">
-        <h2>Paginator</h2>
+        <h2 id="form-heading">Form</h2>
       </div>
-
-      <div class="boxed-width paginator-container">
-
-        <nav class="paginator">
-          <ul>
-            
-            <li>
-              <a href="/typography-styles" class="paginator-first"><span class="icon icon-arrow-left hidden-xs visible-sm"></span> First</a>
-            </li>
-            
-            
-            <li class="hidden-xs visible-sm">
-            <a href="/components-01" class="paginator-prev"><span class="icon icon-arrow-left"></span></a>
-            </li>
-            
-            
-            <li class="hidden-xs visible-sm"><a class="" href="/typography-styles" >1</a></li>
-            
-            <li class="hidden-xs visible-sm"><a class="" href="/colors-buttons-links-images-icons" >2</a></li>
-            
-            <li class=""><a class="" href="/components-01" >3</a></li>
-            
-            <li class=""><a class="paginator-active" href="/components-02" aria-current="page">4</a></li>
-            
-            <li class=""><a class="" href="/components-03" >5</a></li>
-            
-            
-            <li class="hidden-xs visible-sm"><a href="/components-03" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>
-            
-            
-            <li><a href="/components-03" class="paginator-last">Last <span class="icon icon-arrow-right hidden-xs visible-sm"></span></a>
-            </li>
-            
-          </ul>
-        </nav>
-
-      </div>
-    </section> 
+      <!-- Form -->
+      <div class="boxed-width">
+        <div class="form-container">
+          
+          <form method="post" action="#" aria-labelledby="form-heading">
+            <input type="hidden" name="_next" value="#">
+            <input type="hidden" name="_subject" value="New Message :)">
+            <input type="hidden" name="_cc" value="#">
+            <label for="name">Name</label>
+            <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('Please write your name')" oninput="this.setCustomValidity('')">
+            <label for="phone">Phone</label>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your phone number')" oninput="this.setCustomValidity('')">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your email')" oninput="this.setCustomValidity('')">
+            <label for="message">Message</label>
+            <textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Please write a message')" oninput="this.setCustomValidity('')"></textarea>
+            <button type="submit" class="button-base" aria-describedby="form-note">Send</button>
+            <p class="note" id="form-note"></p>
+          </form>
+          
+        </div>
+      </div>  
+    </section>  
   </main>
   <footer>
 </footer>  

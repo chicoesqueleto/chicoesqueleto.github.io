@@ -151,6 +151,9 @@
   .paragraphs-container{
     columns: 3;
   }
+  .form-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
   /* Typography styles post end */
 
   /* Colors, buttons, images and icons post */
