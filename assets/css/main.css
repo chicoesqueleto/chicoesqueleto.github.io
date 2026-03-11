@@ -770,6 +770,10 @@ nav ul, nav ol, nav li{
   justify-content: center;
 }
 
+.paginator .visible-sm{
+  display: block;
+}
+
 .paginator ul{
   display: flex;
   font-weight: var(--bold);
