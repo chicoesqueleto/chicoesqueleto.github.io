@@ -225,18 +225,47 @@
             <label for="name">{{ item.name-label }}</label>
             <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.name-validation }}')" oninput="this.setCustomValidity('')">
             <label for="phone">{{ item.phone-label }}</label>
-            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your phone number')" oninput="this.setCustomValidity('')">
-            <label for="email">Email</label>
-            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('Please write your email')" oninput="this.setCustomValidity('')">
-            <label for="message">Message</label>
-            <textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('Please write a message')" oninput="this.setCustomValidity('')"></textarea>
-            <button type="submit" class="button-base" aria-describedby="form-note">Send</button>
-            <p class="note" id="form-note">{{ page.form-note }}</p>
+            <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.phone-validation }}')" oninput="this.setCustomValidity('')">
+            <label for="email">{{ item.email-label }}</label>
+            <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.email-validation }}')" oninput="this.setCustomValidity('')">
+            <label for="message">{{ item.message-label }}</label>
+            <textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('{{ item.message-validation }}')" oninput="this.setCustomValidity('')"></textarea>
+            <button type="submit" class="{{ item.button-size }} form-button" aria-describedby="form-note">{{ item.button-text }}</button>
+            <p class="form-note" id="form-note">{{ item.form-note }}</p>
           </form>
           {% endfor %}
         </div>
       </div>  
-    </section>  
+    </section> 
+    <section class="full-width">
+      <!-- Radio buttons and Checkboxes -->
+      <h2>{{ page.radio-buttons-and-checkboxes-heading }}</h2>
+      <div class="radio-buttons-container">
+        {% for item in site.data.radio-buttons %}
+        <article>
+          <div class="radio-button-container">
+            <input class="{{ item.radio-button-size }}" type="radio" id="{{ item.id }}" name="choice" value="{{ item.heading }}">
+            <label class="{{ item.text-size }} checkbox-label" for="{{ item.id }}">{{ item.label }}</label>
+          </div>
+          <h3 class="p-xs">{{ item.heading }}</h3>   
+        </article>   
+        {% endfor %}
+       </div> 
+
+      <div class="checkboxes-container">  
+        {% for item in site.data.checkboxes %}
+        <article>
+          <div class="checkbox-container">
+            <input class="{{ item.checkbox-size }}" type="checkbox" id="{{ item.id }}" name="choice" value="{{ item.heading }}">
+            <label class="{{ item.text-size }} checkbox-label" for="{{ item.id }}">{{ item.label }}</label>
+          </div>
+          <h3 class="p-xs">{{ item.heading }}</h3>    
+        </article>   
+        {% endfor %}
+      </div>
+
+    </section>
+
   </main>
   {% include basic-styles-and-components-footer.html %}   
 <body> 

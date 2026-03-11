@@ -66,15 +66,20 @@
   .links-container, 
   .arrow-links-container,
   .images-container, 
-  .icons-container{
+  .icons-container,
+  .checkboxes-container,
+  .radio-buttons-container{
     gap: 1.5rem;
   }
   .colors-container, .icons-container{
     grid-template-columns: repeat(5, 1fr);
   }
-  .buttons-container, .links-container, 
+  .buttons-container, 
+  .links-container, 
   .arrow-links-container, 
-  .images-container{
+  .images-container, 
+  .checkboxes-container,
+  .radio-buttons-container{
     grid-template-columns: repeat(3, 1fr);
   }
   /* Colors, buttons, images and icons post end*/
@@ -161,14 +166,20 @@
   .links-container, 
   .arrow-links-container,
   .images-container, 
-  .icons-container{
+  .icons-container, 
+  .checkboxes-container,
+  .radio-buttons-container{
     gap: 2rem;
   }
   .colors-container, .icons-container{
     grid-template-columns: repeat(12, 1fr);
     align-items: start;
   }
-  .buttons-container, .links-container, .arrow-links-container{
+  .buttons-container, 
+  .links-container, 
+  .arrow-links-container, 
+  .checkboxes-container,
+  .radio-buttons-container{
     grid-template-columns: repeat(6, 1fr);
   }
   .images-container{
