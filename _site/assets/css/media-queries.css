@@ -47,6 +47,10 @@
   .card-horizontal{
     align-items: center;
   }
+  /* Pagination */
+  .paginator .visible-sm{
+    display: block;
+  }
   /* Typography styles post */
   main .paragraphs-container{
     margin-bottom: 4rem;
