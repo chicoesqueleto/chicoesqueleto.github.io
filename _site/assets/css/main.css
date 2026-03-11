@@ -820,9 +820,9 @@ nav ul, nav ol, nav li{
 
 .header-background{
   background-color: var(--neutral-20);
-  height: 80vh;
   display: flex;
   align-items: center;
+  padding: 6rem 0;
 }
 
 .header-background .header-content{

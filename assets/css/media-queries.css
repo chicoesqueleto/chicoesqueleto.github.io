@@ -133,6 +133,11 @@
   .container-horizontal figure, .card-horizontal figure{
     margin-bottom: 0;
   }
+  /*Header Background*/
+  .header-background{
+    height: 80vh;
+    padding: 0;
+  }
   /*Header Two Columns*/
   .header-two-columns-01, .header-two-columns-02{
     gap: 2rem;
