@@ -287,9 +287,9 @@ figure img{
 /* Buttons links */
 
 a{
-  color: var(--neutral-60);
+  color: var(--neutral-70);
   text-decoration: none;
-  border-bottom: 1px solid var(--neutral-60);
+  border-bottom: 1px solid var(--neutral-70);
   padding-bottom: .05rem;
   transition: var(--fade);
 }
@@ -463,8 +463,8 @@ input[type="checkbox"]:checked::after {
 
 .checkbox-s{
   font-size: var(--p-s);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .checkbox-base{
@@ -475,8 +475,8 @@ input[type="checkbox"]:checked::after {
 
 .checkbox-m{
   font-size: var(--p-m);
-  width: 1.72rem;
-  height: 1.72rem;
+  width: 1.69rem;
+  height: 1.69rem;
 }
 
 .checkbox-l{
@@ -547,8 +547,8 @@ input[type="radio"]:checked::before{
 }
 
 .radio-button-m::before{
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .radio-button-l{
@@ -558,8 +558,8 @@ input[type="radio"]:checked::before{
 }
 
 .radio-button-l::before{
-  width: 1.1rem;
-  height: 1.1rem;
+  width: 1.15rem;
+  height: 1.15rem;
 }
 
 .radio-button-xl{
@@ -569,8 +569,8 @@ input[type="radio"]:checked::before{
 }
 
 .radio-button-xl::before{
-  width: 1.35rem;
-  height: 1.35rem;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 
