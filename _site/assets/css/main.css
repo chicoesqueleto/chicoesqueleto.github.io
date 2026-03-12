@@ -718,13 +718,18 @@ nav ul, nav ol, nav li{
 
 .modal-nav-links a::after{
   top: .5rem;
-  transform: scaleX(1);
-  -webkit-transform: scaleX(1);
+/*  transform: scaleX(1);
+  -webkit-transform: scaleX(1);*/
 }
 
 .nav-links a:hover::after{
   transform: scaleX(1);
   -webkit-transform: scaleX(1);
+}
+
+.nav-link-active::after{
+  transform: scaleX(1) !important;
+  -webkit-transform: scaleX(1) !important;
 }
 
 .nav-platforms, .search-toggle-navigation{

@@ -1,5 +1,5 @@
 - link-text: "Link 01"
-  url: "#"
+  url: "/components-01"
   target: "_self"
 - link-text: "Link 02"
   url: "#"
