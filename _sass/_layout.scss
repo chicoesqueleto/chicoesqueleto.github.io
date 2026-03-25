@@ -1,0 +1,146 @@
+.basic-styles-and-components{
+  background-color: var(--neutral-0);
+}
+
+.ux-library-header{
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  h1{
+    margin-bottom: 0;
+  }
+}
+
+main {
+  margin-bottom: 6rem !important;
+}
+
+.headings-container,
+.paragraphs-container {
+  columns: 1;
+
+  article {
+    break-inside: avoid;
+    margin-bottom: 3rem;
+  }
+}
+
+.headings-container h1,
+.headings-container h2,
+.headings-container h3,
+.headings-container h4,
+.headings-container h5,
+.headings-container h6 {
+  margin-bottom: 0;
+}
+
+.paragraphs-container p:last-child {
+  margin-bottom: 0;
+}
+
+.article-heading {
+  font-size: var(--h6);
+  margin-bottom: var(--p-s) !important;
+}
+
+.colors-container,
+.buttons-container,
+.links-container,
+.arrow-links-container,
+.images-container,
+.icons-container,
+.checkboxes-container,
+.radio-buttons-container {
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.colors-container,
+.icons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.colors-container h3,
+.icons-container h3,
+.links-container h3,
+.arrow-links-container h3,
+.checkboxes-container h3,
+.radio-buttons-container h3 {
+  margin-bottom: 0rem;
+  font-weight: var(--bold);
+}
+
+.color-circle,
+.icon-container {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.color-circle,
+.button-container,
+.link-container,
+.arrow-link-container,
+.icon-container,
+.checkbox-container,
+.radio-button-container {
+  margin-bottom: 1rem;
+}
+
+.color-circle {
+  border-radius: 50%;
+
+  &.neutral-0,
+  &.bright {
+    border: 1px solid var(--neutral-20);
+  }
+}
+
+.icon-container .icon {
+  font-size: 1.8rem;
+}
+
+.buttons-container,
+.links-container,
+.arrow-links-container,
+.images-container,
+.checkboxes-container,
+.radio-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.button-container,
+.link-container,
+.arrow-link-container,
+.icon-container,
+.checkbox-container,
+.radio-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bright);
+  border-radius: var(--rounded-border-01);
+  box-shadow: var(--shadow);
+}
+
+.button-container,
+.link-container,
+.arrow-link-container,
+.checkbox-container,
+.radio-button-container {
+  height: 8rem;
+}
+
+.nav-container,
+.header-background,
+.header-two-columns-01,
+.containers-container,
+.cards-container,
+.slideshow-content,
+.form-container {
+  margin-bottom: 3rem !important;
+}

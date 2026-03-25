@@ -20,9 +20,8 @@
 
 title: Basic styles and components
 email: hola@fluorescente.design
-description: >- # this means to ignore newlines until "baseurl:"
-  Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit.
-# baseurl: "" the subpath of your site, e.g. /blog
+description: Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit.
+baseurl: ""
 url: "https://chicoesqueleto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 author-url: "https://fluorescente.design"
 author: Fluorescente
@@ -37,6 +36,11 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never 
 
 collections:
   typography-heading-styles:

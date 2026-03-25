@@ -37,3 +37,6 @@ gem 'jekyll-sitemap'
 
 # Jekyll SEO tag
 gem 'jekyll-seo-tag'
+
+# Jekyll SASS converter
+gem 'jekyll-sass-converter'
