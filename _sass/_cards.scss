@@ -43,6 +43,10 @@
 .card-text {
   padding: 0 1.5rem 2rem 1.5rem;
 
+  h3{
+    font-size: var(--h2);
+  }
+
   p {
     margin-bottom: 0;
   }
