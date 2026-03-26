@@ -55,18 +55,20 @@ layout: compress
             {% if item.tags contains 'vertical' %}
             <div class="container">
               <figure>
-                <img 
-                  srcset="
-                    {{ item.image-xs }} 654w,
-                    {{ item.image-sm }} 704w,
-                    {{ item.image-lg }} 560w"
-                  sizes="
-                    (min-width: 1025px) 280px,
-                    (min-width: 641px) 352px,
-                    327px"
-                  src="{{ item.src }}"  
-                  alt="{{ item.thumbnail-alt }}"
-                  loading="lazy">
+                <a href="{{ item.permalink }}">
+                  <img 
+                    srcset="
+                      {{ item.image-xs }} 654w,
+                      {{ item.image-sm }} 704w,
+                      {{ item.image-lg }} 560w"
+                    sizes="
+                      (min-width: 1025px) 280px,
+                      (min-width: 641px) 352px,
+                      327px"
+                    src="{{ item.src }}"  
+                    alt="{{ item.thumbnail-alt }}"
+                    loading="lazy">
+                  </a>
               </figure>
               <div class="text-buttons">
                 <div class="container-text">
