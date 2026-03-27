@@ -166,6 +166,7 @@ main {
 
     h1{
       margin-bottom: 1rem;
+      max-width: 800px;
     }
 
     .author-date{
@@ -174,7 +175,15 @@ main {
     }
   }
 
+  main{
+    max-width: 800px;
+  }
+
   figure{
     margin-bottom: 2rem;
   }
+}
+
+.liquid{
+  margin: -1rem 0;
 }
