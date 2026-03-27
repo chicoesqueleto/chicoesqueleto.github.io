@@ -144,3 +144,37 @@ main {
 .form-container {
   margin-bottom: 3rem !important;
 }
+
+.post{
+
+  h1:has(+ p), h2:has(+ p), h3:has(+ p), h4:has(+ p), h5:has(+ p),
+  h1:has(+ ul), h2:has(+ ul), h3:has(+ ul), h4:has(+ ul), h5:has(+ ul),
+  h1:has(+ ol), h2:has(+ ol), h3:has(+ ol), h4:has(+ ol), h5:has(+ ol)
+  {
+    margin-bottom: 1rem;
+  }
+
+  p:has(+ h1), p:has(+ h2), p:has(+ h3), p:has(+ h4), p:has(+ h5),
+  ul:has(+ h1), ul:has(+ h2), ul:has(+ h3), ul:has(+ h4), ul:has(+ h5),
+  ol:has(+ h1), ol:has(+ h2), ol:has(+ h3), ol:has(+ h4), ol:has(+ h5){
+    margin-bottom: 1.5rem;
+  }
+
+  header{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+
+    h1{
+      margin-bottom: 1rem;
+    }
+
+    .author-date{
+      font-weight: var(--bold);
+      font-size: var(--p-xs);
+    }
+  }
+
+  figure{
+    margin-bottom: 2rem;
+  }
+}
