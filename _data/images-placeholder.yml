@@ -6,6 +6,8 @@
   alt: "Placeholder image with 1:1 aspect ratio" 
 - image: "../assets/images/placeholder-images/images-5-4.svg"
   alt: "Placeholder image with 5:4 aspect ratio"
+- image: "../assets/images/placeholder-images/images-4-3.svg"
+  alt: "Placeholder image with 4:3 aspect ratio"  
 - image: "../assets/images/placeholder-images/images-3-2.svg"
   alt: "Placeholder image with 3:2 aspect ratio"
 - image: "../assets/images/placeholder-images/images-16-9.svg"
