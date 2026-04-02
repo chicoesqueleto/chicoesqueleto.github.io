@@ -5,7 +5,7 @@
 
 form label {
   font-size: var(--p-base);
-  font-weight: var(--p-bold);
+  font-weight: var(--bold);
   display: block;
   margin-bottom: .5rem;
 }
@@ -58,7 +58,7 @@ input[type="checkbox"] {
 
   &:checked::after {
     font-family: icomoon, sans-serif;
-    content: "\e918";
+    content: "\e913";
     display: block;
     text-align: center;
     color: var(--neutral-80);
