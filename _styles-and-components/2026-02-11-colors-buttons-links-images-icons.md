@@ -1,8 +1,8 @@
 ---
 layout: color-buttons-links-images-icons
-title: "02 Colores, botones, links, imágenes e íconos"
-heading: "02 Colores, botones, links, imágenes e íconos"
-name: "02 Colores, botones, links, imágenes e íconos"
+title: "Colores, botones, links, imágenes e íconos"
+heading: "Colores, botones, links, imágenes e íconos"
+name: "Colores, botones, links, imágenes e íconos"
 colors-heading: "Colores"
 buttons-and-links-heading: "Botones y links"
 images-heading: "Imágenes"

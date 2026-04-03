@@ -1,8 +1,8 @@
 ---
 layout: typography-styles
-title: "01 Estilos tipográficos"
-heading: "01 Estilos tipográficos"
-name: "01 Estilos tipográficos"
+title: "Estilos tipográficos"
+heading: "Estilos tipográficos"
+name: "Estilos tipográficos"
 headings-heading: "Encabezados"
 paragraphs-heading: "Párrafos"
 permalink: /typography-styles

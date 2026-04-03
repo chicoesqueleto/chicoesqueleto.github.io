@@ -6,24 +6,7 @@ layout: compress
 <html lang="{{ site.lang }}" class="basic-styles-and-components landing">
 {% include basic-styles-and-components-head.html %}
   <body>
-    <nav class="landing-nav full-width">
-      <ul class="landing-nav-links">
-        {% if page.previous.url %}
-          <li class="landing-nav-link landing-nav-prev"><a href="{{ page.previous.url }}"><span class="icon icon-arrow-left"></span> <span class="hidden-xs hidden-sm visible-lg">{{ page.previous.name }}</span></a></li>
-        {% else %}
-          <li class="landing-nav-link landing-nav-prev"><a href="{{ site.styles-and-components.last.url }}"><span class="icon icon-arrow-left"></span> <span class="hidden-xs hidden-sm visible-lg">{{ site.styles-and-components.last.name }}</span></a></li>
-        {% endif %}
-        <ul class="main-links">
-          <li><a href="/"><span class="icon icon-home"></span></a></li>
-          <li><a href="#landing-modal-nav" uk-toggle aria-label="Botón de navegación"><span class="icon icon-hamburger-two"></span></a></li>
-        </ul>  
-        {% if page.next.url %}
-          <li class="landing-nav-link landing-nav-next"><a href="{{ page.next.url }}"><span class="hidden-xs hidden-sm visible-lg">{{ page.next.name }}</span> <span class="icon icon-arrow-right"></span></a></li>
-        {% else %}
-          <li class="landing-nav-link landing-nav-next"><a href="{{ site.styles-and-components.first.url }}"><span class="hidden-xs hidden-sm visible-lg">{{ site.styles-and-components.first.name }}</span> <span class="icon icon-arrow-right"></span></a></li>
-        {% endif %}
-      </ul>
-    </nav>
+    {% include landing-nav.html %}
     <!-- Header Two Columns 02 -->
     <header class="header-two-columns-02 landing-header boxed-width">
       <!-- Hero image -->
@@ -118,7 +101,8 @@ layout: compress
           {% endfor %}
         </ul>  
       </section>
-    </main>  
+    </main>
+    {% include landing-nav.html %}  
     {% include basic-styles-and-components-footer.html %} 
   </body>
 </html>    

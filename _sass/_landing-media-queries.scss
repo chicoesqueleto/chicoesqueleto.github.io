@@ -26,6 +26,7 @@
     }
   }
   .notes{
+    padding-top: 4rem;
     ul{
       padding-bottom: 4rem;
     }
@@ -36,11 +37,35 @@
 @media screen and (min-width: 1025px) {
   .landing-header{
     grid-template-columns: repeat(2, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid var(--neutral-30);
     .header-content, .hero-image{
       grid-column: initial;
     }
+    .header-content{
+      border-bottom: none;
+    }
     .hero-image{
       order: 2;
+    }
+  }
+  .uses{
+    border-bottom: 1px solid var(--neutral-30);
+    .uses-container{
+      max-width: 1040px;
+      margin: 0 auto;
+      border-bottom: none;
+      gap: 4rem;
+   }
+  }
+  .notes{
+    ul{
+      columns: 2;
+      gap: 2rem;
+      li{
+        break-inside: avoid;
+      }
     }
   }
 }
