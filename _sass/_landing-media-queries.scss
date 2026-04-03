@@ -2,6 +2,33 @@
 @media screen and (min-width: 641px) {
   .landing-header{
     grid-template-columns: initial;
+    padding-bottom: 0;
+    .header-content{
+      padding-bottom: 4rem;
+    }
+  }
+  .uses-container, .features-container{
+    padding: 4rem 0;
+    display: grid;
+    gap: 1.5rem;
+  }
+  .uses-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .features-container{
+    grid-template-columns: repeat(3, 1fr);
+    .feature{
+      margin-bottom: 1.5rem !important;
+    }
+    .header-buttons{
+      grid-column: 1 / 4;
+      justify-content: center;
+    }
+  }
+  .notes{
+    ul{
+      padding-bottom: 4rem;
+    }
   }
 }
 

@@ -2,7 +2,7 @@ a {
   color: var(--neutral-70);
   text-decoration: none;
   border-bottom: 1px solid var(--neutral-70);
-  padding-bottom: .05rem;
+  padding-bottom: .015rem;
   transition: var(--fade);
 
   &:hover {
@@ -80,26 +80,51 @@ button,
 .button-xs {
   font-size: var(--p-xs);
   padding: .375rem .75rem .38rem .75rem;
+  span{
+    &::before{
+      font-size: var(--p-s);
+    }
+  }
 }
 
 .button-s {
   font-size: var(--p-s);
   padding: .5rem 1rem .5rem 1rem;
+  span{
+    &::before{
+      font-size: var(--p-base);
+    }
+  }
 }
 
 .button-base {
   font-size: var(--p-base);
   padding: .563rem 1.125rem;
+  span{
+    &::before{
+      font-size: var(--p-m);
+    }  
+  }
 }
 
 .button-m {
   font-size: var(--p-m);
   padding: .688rem 1.375rem;
+  span{
+    &::before{
+      font-size: var(--p-l);
+    }  
+  }
 }
 
 .button-l {
   font-size: var(--p-l);
   padding: .75rem 1.5rem;
+  span{
+    &::before{
+      font-size: var(--p-xl);
+    }  
+  }
 }
 
 .button-xl {

@@ -132,6 +132,11 @@
     padding-right: 2rem;
   }
 
+  .boxed-width{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .containers-container,
   .cards-container {
     grid-template-columns: repeat(4, 1fr);
