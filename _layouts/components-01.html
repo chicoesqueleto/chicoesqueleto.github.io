@@ -196,8 +196,8 @@ layout: compress
               <a href="{{ page.previous.url }}" class="paginator-prev"><span class="icon icon-arrow-left"></span></a>
               </li>
               {% endif %}
-              {% for styles-and-component in site.styles-and-components limit: 7 %}
-              <li class="{% if styles-and-component.permalink != page.previous.url and styles-and-component.permalink != page.next.url and styles-and-component.permalink != page.url %}hidden-xs visible-sm{% endif%}"><a class="{% if page.url == styles-and-component.permalink %}paginator-active{% endif %}" href="{{ styles-and-component.permalink }}" {% if page.url == styles-and-component.permalink %}aria-current="page"{% endif %}>{{ forloop.index }}</a></li>
+              {% for item in site.styles-and-components limit: 7 %}
+              <li class="{% if item.permalink != page.previous.url and item.permalink != page.next.url and item.permalink != page.url %}hidden-xs visible-sm{% endif%}"><a class="{% if page.url == item.permalink %}paginator-active{% endif %}" href="{{ item.permalink }}" {% if page.url == item.permalink %}aria-current="page"{% endif %}>{{ forloop.index }}</a></li>
               {% endfor %}
               {% if page.next.url %}
               <li class="hidden-xs visible-sm"><a href="{{ page.next.url }}" class="paginator-next"><span class="icon icon-arrow-right"></span></a></li>

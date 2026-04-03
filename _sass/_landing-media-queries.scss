@@ -1,0 +1,19 @@
+// Sm screens
+@media screen and (min-width: 641px) {
+  .landing-header{
+    grid-template-columns: initial;
+  }
+}
+
+// L screens
+@media screen and (min-width: 1025px) {
+  .landing-header{
+    grid-template-columns: repeat(2, 1fr);
+    .header-content, .hero-image{
+      grid-column: initial;
+    }
+    .hero-image{
+      order: 2;
+    }
+  }
+}
