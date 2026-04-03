@@ -9,7 +9,7 @@ layout: compress
     <header class="full-width ux-library-header">
       <h1 class="h-xxl">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
     </header>
-    <main>
+    <main class="basic-styles-and-components-main">
       <section>
         <div class="full-width">
           <h2>{{ page.containers-heading }}</h2>
@@ -22,7 +22,7 @@ layout: compress
               {% if item.tags contains 'horizontal' %}
               <div class="container container-horizontal">
                 <figure>
-                  <a href="{{ item.permalink }}">
+                  <a href="{{ item.fake-link }}">
                     <img 
                       srcset="
                         {{ item.image-xs }} 686w,
@@ -42,7 +42,7 @@ layout: compress
                     <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
                     <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                   </div>
-                  <a href="{{ item.permalink }}" class="button button-base">{{ item.button-text }}</a>
+                  <a href="{{ item.fake-link }}" class="button button-base">{{ item.button-text }}</a>
                 </div>
               </div>
               {% endif %}
@@ -52,7 +52,7 @@ layout: compress
               {% if item.tags contains 'vertical' %}
               <div class="container">
                 <figure>
-                  <a href="{{ item.permalink }}">
+                  <a href="{{ item.fake-link }}">
                     <img 
                       srcset="
                         {{ item.image-xs }} 686w,
@@ -72,7 +72,7 @@ layout: compress
                     <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
                     <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                   </div>
-                  <a href="{{ item.permalink }}" class="button button-base">{{ item.button-text }}</a>
+                  <a href="{{ item.fake-link }}" class="button button-base">{{ item.button-text }}</a>
                 </div>
               </div>
               {% endif %}
@@ -88,7 +88,7 @@ layout: compress
             <!-- Cards Horizontal -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'horizontal' %}
-                <a href="{{ item.permalink }}" class="card card-horizontal">
+                <a href="{{ item.fake-link }}" class="card card-horizontal">
                   <figure>
                     <img 
                       srcset="
@@ -113,7 +113,7 @@ layout: compress
             <!-- Cards Vertical -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'vertical' %}
-              <a href="{{ item.permalink }}" class="card">
+              <a href="{{ item.fake-link }}" class="card">
                 <figure>
                   <img 
                     srcset="
