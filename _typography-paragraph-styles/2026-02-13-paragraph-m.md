@@ -1,5 +1,5 @@
 ---
-heading: "Paragraph m"
+heading: "p m"
 ---
 
 {% for item in site.data.typography-styles %}{{ item.paragraphs-text-1 }}{% endfor %}

@@ -1,5 +1,5 @@
 ---
-heading: "Heading 1 xxl"
+heading: "h1 xxl"
 ---
 
 # {% for item in site.data.typography-styles %}{{ item.heading }}{% endfor %}

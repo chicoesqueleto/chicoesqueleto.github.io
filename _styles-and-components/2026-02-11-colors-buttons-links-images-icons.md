@@ -1,9 +1,9 @@
 ---
 # --- Identificación ---
 layout: color-buttons-links-images-icons
-title: "Colores, botones, links, imágenes e íconos"
-name: "Colores, botones, links, imágenes e íconos"
-heading: "Colores, botones, links, imágenes e íconos"
+title: "Colores, botones, enlaces, imágenes e íconos"
+name: "Colores, botones, enlaces, imágenes e íconos"
+heading: "Colores, botones, enlaces, imágenes e íconos"
 permalink: /colors-buttons-links-images-icons
 
 # --- SEO / Metadatos ---
@@ -18,7 +18,7 @@ button-text: "Botón"
 
 # --- Encabezados internos ---
 colors-heading: "Colores"
-buttons-and-links-heading: "Botones y links"
+buttons-and-links-heading: "Botones y enlaces"
 images-heading: "Imágenes"
 icons-heading: "Íconos"
 icons-interface-heading: "Interfaz"

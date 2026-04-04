@@ -18,17 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Basic styles and components
+title: Estilos básicos y componentes
 email: hola@fluorescente.design
-description: Basic styles and components for wireframes and as templates to develop websites in Jekyll. For JavaSript we are using UiKit.
-baseurl: ""
+description: Base de estilos y componentes para Figma y Jekyll. Tipografía, colores, botones, imágenes responsive y componentes listos para wireframes y desarrollo.
 url: "https://chicoesqueleto.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 author-url: "https://fluorescente.design"
 author: Fluorescente
 creator: Fluorescente
 # twitter_username: jekyllrb
 github_username: fluorescente
-lang: en
+ko-fi_url: "https://ko-fi.com/fluorescente"
+lang: es
 
 # Build settings
 # theme: minima

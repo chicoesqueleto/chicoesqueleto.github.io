@@ -1,5 +1,5 @@
 ---
-heading: "Paragraph xs bold"
+heading: "p xs bold"
 ---
 
 {% for item in site.data.typography-styles %}{{ item.paragraphs-text-1 }}{% endfor %}
