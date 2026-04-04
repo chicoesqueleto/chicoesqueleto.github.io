@@ -133,6 +133,12 @@
   .button{
     background-color: var(--bright);
     color: var(--text);
+    border: 2px solid var(--bright);
+    &:hover{
+      border: 2px solid var(--bright);
+      background-color: var(--text);
+      color: var(--bright);
+    }
   }
 }
 

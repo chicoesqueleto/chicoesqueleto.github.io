@@ -87,7 +87,7 @@ nav {
   }
 }
 
-.nav-link-active::after {
+.modal-nav-links a:hover::after, .nav-link-active::after {
   transform: scaleX(1) !important;
   -webkit-transform: scaleX(1) !important;
 }
