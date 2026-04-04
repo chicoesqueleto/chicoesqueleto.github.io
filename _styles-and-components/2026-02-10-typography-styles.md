@@ -12,6 +12,7 @@ author: "fluorescente.design"
 date: 2026-02-10
 tags: ["tipografía", "escala modular", "Jekyll", "Figma", "CSS"]
 keywords: "estilos tipográficos, escala tipográfica, jerarquía visual, responsive typography"
+image: "assets/images/estilos-y-componentes-basicos-card.png"
 
 # --- Encabezados internos ---
 headings-heading: "Encabezados"

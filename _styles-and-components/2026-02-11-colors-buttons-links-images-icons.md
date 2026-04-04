@@ -12,6 +12,7 @@ author: "fluorescente.design"
 date: 2026-02-11
 tags: ["colores", "botones", "íconos", "imágenes responsive", "Figma", "Jekyll"]
 keywords: "colores neutros, botones CSS, íconos SVG, imágenes responsive, diseño componentes"
+image: "assets/images/estilos-y-componentes-basicos-card.png"
 
 # --- Textos de componentes ---
 button-text: "Botón"
