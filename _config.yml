@@ -31,8 +31,6 @@ ko-fi_url: "https://ko-fi.com/fluorescente"
 lang: es
 locale: es_CO
 logo: assets/images/logo.png
-image: assets/images/estilos-y-componentes-basicos-card.png
-social_image: assets/images/estilos-y-componentes-basicos-card.png
 
 # Build settings
 # theme: minima
