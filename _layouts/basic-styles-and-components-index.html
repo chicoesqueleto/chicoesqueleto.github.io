@@ -39,7 +39,7 @@ layout: compress
       <section class="uses boxed-width">
         <div class="uses-container">
         {% for item in site.data.landing-uses %}
-          <div class="use">
+          <article class="use">
             <figure>
               <img 
                 srcset="
@@ -58,14 +58,14 @@ layout: compress
               <h2>{{ item.heading }}</h2>
               <p>{{ item.text }}</p>
             </div>    
-          </div>
+          </article>
         {% endfor %}
         </div>
       </section>
       <section class="features boxed-width">
         <div class="features-container">
           {% for item in site.data.landing-features %}
-            <div class="feature">
+            <article class="feature">
               <figure>
                   <img 
                     srcset="
@@ -84,7 +84,7 @@ layout: compress
                   <h3>{{ item.heading }}</h3>
                   <p>{{ item.text }}</p>
                 </div>
-            </div>
+            </article>
           {% endfor %}
           <ul class="header-buttons">
             {% for item in site.data.landing-features-buttons %}
