@@ -21,13 +21,13 @@ layout: compress
             <!-- Containers Horizontal -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'horizontal' %}
-                {% include components-container-horizontal %}
+                {% include components-container-horizontal.html %}
               {% endif %}
             {% endfor %}
             <!-- Containers Vertical -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'vertical' %}
-                {% include components-container %}
+                {% include components-container.html %}
               {% endif %}
             {% endfor %}
           </div>
@@ -41,13 +41,13 @@ layout: compress
             <!-- Cards Horizontal -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'horizontal' %}
-                {% includes components-card-horizontal %}
+                {% include components-card-horizontal.html %}
               {% endif %}
             {% endfor %}
             <!-- Cards Vertical -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'vertical' %}
-                {% includes components-card %}
+                {% include components-card.html %}
               {% endif %}
             {% endfor %}
           </div>

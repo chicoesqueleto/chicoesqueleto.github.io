@@ -31,6 +31,9 @@
       padding-bottom: 4rem;
     }
   }
+  .landing-modal-nav-content{
+    padding: 0 1.5rem;
+  }
   .not-found-container{
     display: flex;
     height: 80vh;
@@ -76,6 +79,9 @@
         break-inside: avoid;
       }
     }
+  }
+  .landing-modal-nav-content{
+    padding: 0;
   }
   .not-found-container{
     main{
