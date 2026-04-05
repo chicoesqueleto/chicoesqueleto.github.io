@@ -21,61 +21,13 @@ layout: compress
             <!-- Containers Horizontal -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'horizontal' %}
-              <div class="container container-horizontal">
-                <figure>
-                  <a href="{{ item.fake-link }}">
-                    <img 
-                      srcset="
-                        {{ item.image-xs }} 686w,
-                        {{ item.image-sm }} 696w,
-                        {{ item.image-lg }} 560w"
-                      sizes="
-                        (min-width: 1025px) 280px,
-                        (min-width: 641px) 348px,
-                        343px"
-                      src="{{ item.src }}"  
-                      alt="{{ item.thumbnail-alt }}"
-                      loading="lazy">
-                    </a>  
-                </figure>
-                <div class="text-buttons">
-                  <div class="container-text">
-                    <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                    <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-                  </div>
-                  <a href="{{ item.fake-link }}" class="button button-base">{{ item.button-text }}</a>
-                </div>
-              </div>
+                {% include components-container-horizontal %}
               {% endif %}
             {% endfor %}
             <!-- Containers Vertical -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'vertical' %}
-              <div class="container">
-                <figure>
-                  <a href="{{ item.fake-link }}">
-                    <img 
-                      srcset="
-                        {{ item.image-xs }} 686w,
-                        {{ item.image-sm }} 696w,
-                        {{ item.image-lg }} 560w"
-                      sizes="
-                        (min-width: 1025px) 280px,
-                        (min-width: 641px) 348px,
-                        343px"
-                      src="{{ item.src }}"  
-                      alt="{{ item.thumbnail-alt }}"
-                      loading="lazy">
-                    </a>
-                </figure>
-                <div class="text-buttons">
-                  <div class="container-text">
-                    <h3 class="container-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                    <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-                  </div>
-                  <a href="{{ item.fake-link }}" class="button button-base">{{ item.button-text }}</a>
-                </div>
-              </div>
+                {% include components-container %}
               {% endif %}
             {% endfor %}
           </div>
@@ -89,51 +41,13 @@ layout: compress
             <!-- Cards Horizontal -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'horizontal' %}
-                <a href="{{ item.fake-link }}" class="card card-horizontal">
-                  <figure>
-                    <img 
-                      srcset="
-                        {{ item.image-xs }} 686w,
-                        {{ item.image-sm }} 696w,
-                        {{ item.image-lg }} 560w"
-                      sizes="
-                        (min-width: 1025px) 280px,
-                        (min-width: 641px) 348px,
-                        343px"
-                      src="{{ item.src }}"  
-                      alt="{{ item.thumbnail-alt }}"
-                      loading="lazy">
-                  </figure>
-                  <div class="card-text">
-                    <h3 class="card-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                    <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-                  </div>
-                </a>
+                {% includes components-card-horizontal %}
               {% endif %}
             {% endfor %}
             <!-- Cards Vertical -->
             {% for item in site.placeholder-posts %}
               {% if item.tags contains 'vertical' %}
-              <a href="{{ item.fake-link }}" class="card">
-                <figure>
-                  <img 
-                    srcset="
-                      {{ item.image-xs }} 686w,
-                      {{ item.image-sm }} 696w,
-                      {{ item.image-lg }} 560w"
-                    sizes="
-                      (min-width: 1025px) 280px,
-                      (min-width: 641px) 348px,
-                      343px"
-                    src="{{ item.src }}"  
-                    alt="{{ item.thumbnail-alt }}"
-                    loading="lazy">
-                </figure>
-                <div class="card-text">
-                  <h3 class="card-heading">{{ item.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h3>
-                  <p class="p-s">{{ item.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-                </div>
-              </a>
+                {% includes components-card %}
               {% endif %}
             {% endfor %}
           </div>
@@ -144,97 +58,15 @@ layout: compress
           <h2>{{ page.slideshow-heading }}</h2>
         </div>
         <div class="slideshow-container">
-
-          <div class="boxed-width visible-xs hidden-sm hidden-lg">
-            <!-- Slideshow -->
-            <div class="slideshow" uk-slideshow="ratio: 1:1; animation:push; autoplay:true; autoplay-interval: 4000">
-              <div class="slideshow-content" tabindex="-1">
-                <div class="uk-slideshow-items">
-                  {% for item in site.data.slideshows-images %}
-                  <img 
-                    srcset="
-                      {{ item.image-xs }} 686w"
-                    sizes="343px"
-                    src="{{ item.image-xs }}"  
-                    alt="{{ item.alt }}"
-                    loading="lazy" uk-cover>
-                  {% endfor %}
-                </div>
-                <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
-                <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
-                <ul class="uk-slideshow-nav uk-dotnav"></ul>
-              </div>  
-            </div>
-          </div>
-          <div class="boxed-width hidden-xs visible-sm hidden-lg">
-            <!-- Slideshow -->
-            <div class="slideshow" uk-slideshow="ratio: 5:4; animation:push; autoplay:true; autoplay-interval: 4000">
-              <div class="slideshow-content" tabindex="-1">
-                <div class="uk-slideshow-items">
-                  {% for item in site.data.slideshows-images %}
-                  <img 
-                    srcset="
-                      {{ item.image-sm }} 1440w"
-                    sizes="720px"
-                    src="{{ item.image-xs }}"  
-                    alt="{{ item.alt }}"
-                    loading="lazy" uk-cover>
-                  {% endfor %}
-                </div>
-                <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
-                <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
-                <ul class="uk-slideshow-nav uk-dotnav"></ul>
-              </div>  
-            </div>
-          </div>
-          <div class="boxed-width hidden-xs hidden-sm visible-lg">
-            <!-- Slideshow -->
-            <div class="slideshow" uk-slideshow="ratio: 16:9; animation:push; autoplay:true; autoplay-interval: 4000">
-              <div class="slideshow-content" tabindex="-1">
-                <div class="uk-slideshow-items">
-                  {% for item in site.data.slideshows-images %}
-                  <img 
-                    srcset="
-                      {{ item.image-lg }} 2432w"
-                    sizes="1216px"
-                    src="{{ item.image-lg }}"  
-                    alt="{{ item.alt }}"
-                    loading="lazy" uk-cover>
-                  {% endfor %}
-                </div>
-                <a class="uk-position-center-left prev" href uk-slidenav-previous uk-slideshow-item="previous"><span class="icon icon-prev"></span></a>
-                <a class="uk-position-center-right next" href uk-slidenav-next uk-slideshow-item="next"><span class="icon icon-next"></span></a>
-                <ul class="uk-slideshow-nav uk-dotnav"></ul>
-              </div>  
-            </div>
-          </div> 
+          {% include components-slideshow-1-1-5-4-16-9.html %}
         </div>
       </section>
       <section>
         <div class="full-width">
           <h2 id="{{ page.form-heading-id }}">{{ page.form-heading }}</h2>
         </div>
-        <!-- Form -->
         <div class="boxed-width">
-          <div class="form-container">
-            {% for item in site.data.form %}
-            <form method="post" action="{{ item.action }}" aria-labelledby="{{ item.form-labelledby }}">
-              <input type="hidden" name="_next" value="{{ item.confirmation-page }}">
-              <input type="hidden" name="_subject" value="{{ item.subject }}">
-              <input type="hidden" name="_cc" value="{{ item.cc }}">
-              <label for="name">{{ item.name-label }}</label>
-              <input required type="text" name="name" id="name" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.name-validation }}')" oninput="this.setCustomValidity('')">
-              <label for="phone">{{ item.phone-label }}</label>
-              <input required type="tel" name="phone" id="phone" pattern=".{7,}" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.phone-validation }}')" oninput="this.setCustomValidity('')">
-              <label for="email">{{ item.email-label }}</label>
-              <input required type="email" name="email" id="email" pattern=".{4,64}" autocomplete="on" oninvalid="this.setCustomValidity('{{ item.email-validation }}')" oninput="this.setCustomValidity('')">
-              <label for="message">{{ item.message-label }}</label>
-              <textarea required name="message" id="message" rows="5" pattern=".{4,}" oninvalid="this.setCustomValidity('{{ item.message-validation }}')" oninput="this.setCustomValidity('')"></textarea>
-              <button type="submit" class="{{ item.button-size }} form-button" aria-describedby="form-note">{{ item.button-text }}</button>
-              <p class="form-note" id="form-note">{{ item.form-note }}</p>
-            </form>
-            {% endfor %}
-          </div>
+          {% include components-form.html %}
         </div>  
       </section> 
       <section class="full-width">
